@@ -8,9 +8,9 @@
 <style>
 :root{--bg:#f8f6ff;--surface:#fff;--ink:#282052;--muted:#716c91;--line:#e9e3fb;--purple:#35208f;--violet:#6a4de0;--sky:#86d4ff;--mint:#98ecd4;--soft:#f0ebff;--shadow:0 18px 50px #33207812;--radius:24px}
 :root[data-theme="dark"]{--bg:#12102a;--surface:#1d1940;--ink:#f5f1ff;--muted:#bdb6dc;--line:#39325f;--soft:#29234e;--shadow:0 18px 50px #0004}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Nunito",ui-rounded,system-ui,-apple-system,sans-serif}button,input,textarea,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--violet);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:2px;background:var(--mint);border-radius:9px}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.12;letter-spacing:-.035em}h1{font-size:clamp(3.5rem,9vw,7.3rem);margin:.4rem 0 .2rem}h2{font-size:clamp(2.1rem,5vw,3.7rem);margin:.7rem 0 1rem}h3{font-size:1.25rem}.muted{color:var(--muted)}.small{font-size:.86rem}.topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:1000;letter-spacing:.16em;color:var(--purple)}:root[data-theme=dark] .brand{color:#c7b9ff}.brand-mark{width:36px;height:36px;border-radius:13px;background:linear-gradient(140deg,var(--violet),var(--sky),var(--mint));display:grid;place-items:center;color:#25175c;font-size:20px}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{text-decoration:none;font-size:.9rem;font-weight:800;color:var(--muted)}.navlinks a:hover{color:var(--violet)}.nav-actions{display:flex;align-items:center;gap:8px}.icon-btn,.menu-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:14px;width:42px;height:42px;cursor:pointer}.menu-btn{display:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(110deg,var(--mint),var(--sky),#c7b8ff);color:#21184f;font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 9px 22px #5141a31a;transition:transform .18s,box-shadow .18s}.btn:hover{transform:translateY(-2px);box-shadow:0 13px 28px #5141a32b}.btn.secondary{background:var(--surface);border:1px solid var(--line);box-shadow:none;color:var(--ink)}.btn.urgent{background:#fff0f1;color:#9c2438;border:1px solid #ffd1d7;box-shadow:none}.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 80% 25%,#87d8ff80,transparent 35%),radial-gradient(ellipse at 15% 90%,#a8f0d580,transparent 32%),linear-gradient(130deg,#302078,#5b42c4 55%,#6aafe7)}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff30;border-radius:50%;right:-130px;top:-190px;box-shadow:0 0 0 45px #ffffff09,0 0 0 90px #ffffff08}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:88px 0 96px}.hero .eyebrow{color:#d9fff5}.hero h1 span{color:#b8f5e3}.hero-lead{max-width:590px;color:#f2efff;font-size:1.14rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}.hero .secondary{background:#ffffff17;border-color:#ffffff65;color:white}.hero-note{font-size:.83rem;color:#e2dcff}.hero-art{min-height:360px;display:grid;place-items:center;position:relative}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#ffffffd9,#b6e9ff9c 22%,#b6a4ff55 50%,#ffffff05 70%);border:1px solid #ffffff88;box-shadow:0 0 0 15px #ffffff0b,0 0 90px #b9e8ff66;position:relative}.main-anima{font-size:clamp(7rem,18vw,12rem);filter:drop-shadow(0 15px 18px #27195c50);animation:float 5s ease-in-out infinite}.spark{position:absolute;color:#d9fff5;font-size:1.5rem}.spark.s1{top:9%;left:18%}.spark.s2{right:10%;top:27%}.spark.s3{bottom:10%;left:14%}@keyframes float{50%{transform:translateY(-12px) rotate(3deg)}}.orb-label{position:absolute;bottom:5%;right:-5%;background:#fff;color:#302078;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);font-size:.9rem;font-weight:900}.section{padding:92px 0}.section.alt{background:linear-gradient(180deg,var(--soft),var(--bg))}.section-head{max-width:700px;margin-bottom:35px}.section-head p{color:var(--muted);font-size:1.05rem}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.card-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:18px;background:var(--soft);font-size:1.7rem;margin-bottom:16px}.card p:last-child{margin-bottom:0}.anima-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.anima-option{border:1px solid var(--line);background:var(--surface);border-radius:22px;padding:18px 10px;text-align:center;cursor:pointer;color:var(--ink);transition:.18s}.anima-option:hover,.anima-option[aria-pressed=true]{border-color:var(--violet);transform:translateY(-3px);box-shadow:0 12px 28px #5141a31a}.anima-option[aria-pressed=true]{background:var(--soft);outline:2px solid #8f79ed50}.animal{font-size:3.2rem;display:block;margin-bottom:8px}.anima-option b{display:block}.anima-option small{color:var(--muted);font-size:.76rem}.demo{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:start}.demo-side{position:sticky;top:100px}.profile-card{background:linear-gradient(145deg,#3b268f,#705ce1 65%,#79c9e8);color:#fff;border-radius:28px;padding:26px;overflow:hidden;position:relative}.profile-card:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff4a;border-radius:50%;right:-75px;top:-80px;box-shadow:0 0 0 28px #ffffff0b,0 0 0 56px #ffffff0b}.profile-top{display:flex;align-items:center;gap:14px}.profile-emoji{width:78px;height:78px;border-radius:25px;background:#ffffff2a;display:grid;place-items:center;font-size:3.4rem}.profile-card p{color:#e9e5ff}.profile-card .label{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:#c9f7ec;font-weight:900}.profile-card h3{font-size:1.7rem;margin:3px 0}.profile-card .mini{display:flex;justify-content:space-between;border-top:1px solid #ffffff40;padding-top:15px;margin-top:20px;font-size:.86rem}.form-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}.moods{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:17px 0}.mood{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:17px;padding:12px 5px;cursor:pointer}.mood span{display:block;font-size:1.7rem}.mood small{font-size:.73rem;font-weight:800}.mood[aria-pressed=true]{border:2px solid var(--violet);background:var(--soft)}label{display:block;font-weight:900;font-size:.88rem;margin:15px 0 7px}textarea,input,select{width:100%;border:1px solid var(--line);border-radius:15px;padding:12px 14px;background:var(--bg);color:var(--ink);outline:none}textarea{min-height:94px;resize:vertical}textarea:focus,input:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 3px #8c79e52b}.privacy-box{display:flex;align-items:flex-start;gap:10px;background:var(--soft);padding:13px;border-radius:15px;margin:15px 0;font-size:.85rem}.privacy-box input{width:auto;margin-top:5px}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.preview{margin-top:18px;border-radius:18px;padding:16px;background:linear-gradient(120deg,#e8e1ff,#e1f8f2);color:#292052;display:none}.preview.show{display:block}.preview strong{display:block;font-size:1.1rem}.preview small{color:#5c5680}.status-msg{min-height:24px;color:var(--muted);font-size:.84rem;margin:10px 0 0}.circle-list{display:grid;gap:12px}.friend{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.friend-avatar{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:var(--soft);font-size:1.8rem;flex:none}.friend-info{flex:1;min-width:0}.friend-info b{display:block}.friend-info small{color:var(--muted)}.state-pill{font-size:.75rem;font-weight:900;background:var(--soft);padding:6px 10px;border-radius:99px}.suggestion{border:0;background:none;color:var(--violet);font-weight:900;cursor:pointer}.community-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.community-post{border-radius:22px;padding:21px;background:var(--surface);border:1px solid var(--line)}.community-post .post-emoji{font-size:2rem}.community-post p{margin:10px 0}.community-post small{color:var(--muted)}.chatbox{border-radius:26px;background:var(--surface);border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow)}.chat-head{display:flex;align-items:center;gap:12px;padding:16px 20px;background:linear-gradient(100deg,#3d2a9c,#6c56d8);color:white}.chat-head .face{font-size:2.2rem}.chat-head small{display:block;color:#e4ddff}.chat-log{height:310px;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:12px}.bubble{max-width:82%;padding:12px 15px;border-radius:18px;background:var(--soft);align-self:flex-start}.bubble.user{background:linear-gradient(110deg,#b9a9ff,#a6e5ee);color:#24194e;align-self:flex-end}.chat-compose{display:flex;gap:9px;padding:14px;border-top:1px solid var(--line)}.chat-compose input{flex:1;min-width:0}.chat-disclaimer{padding:0 18px 14px;color:var(--muted);font-size:.77rem}.help-panel{border-radius:28px;background:#fff0f1;border:1px solid #ffd4d9;color:#63283a;padding:28px}.help-panel h2{font-size:2rem}.help-links{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.help-links a{display:inline-flex;padding:11px 15px;border-radius:99px;background:#fff;color:#8e233b;font-weight:900;text-decoration:none;border:1px solid #f4c3ca}.help-note{font-size:.86rem;color:#754d57}.kids-stage{position:relative;min-height:270px;border-radius:26px;overflow:hidden;background:linear-gradient(#bdeaff,#e5f9dd 72%,#9edb9e);display:grid;place-items:center;padding:25px;color:#2d4b52}.kids-sun{position:absolute;right:12%;top:12%;width:58px;height:58px;background:#fff0a6;border-radius:50%;box-shadow:0 0 0 14px #fff5c655}.kids-tree{position:absolute;bottom:-25px;font-size:8rem;opacity:.7}.kids-character{font-size:5rem;z-index:1}.kids-prompt{z-index:1;background:#ffffffd9;padding:12px 17px;border-radius:18px;text-align:center;max-width:330px}.kids-choices{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.kids-choices button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 14px;border-radius:99px;cursor:pointer}.kids-choices button[aria-pressed=true]{border-color:var(--violet);background:var(--soft)}.kids-result{font-weight:900;margin-top:13px;min-height:24px}.care-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.footer{padding:42px 0;background:#24175f;color:#eeeaff}.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}.footer a{color:#c8f7eb}.disclaimer{max-width:600px;color:#c9c2e9;font-size:.83rem}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#211653;color:white;padding:12px 18px;border-radius:99px;opacity:0;pointer-events:none;transition:.25s;z-index:60;box-shadow:var(--shadow);max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.prototype{display:inline-flex;gap:7px;align-items:center;border:1px solid #ffffff55;background:#ffffff16;border-radius:99px;padding:6px 11px;color:#fff;font-size:.76rem;font-weight:800}
-@media(max-width:900px){.navlinks{display:none;position:absolute;top:75px;left:0;right:0;padding:15px 22px 20px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-btn{display:block}.hero-inner{grid-template-columns:1fr;text-align:center;padding:68px 0}.hero-lead{margin-inline:auto}.hero-actions{justify-content:center}.hero-art{min-height:280px}.orb{width:270px}.main-anima{font-size:9rem}.anima-grid{grid-template-columns:repeat(3,1fr)}.demo{grid-template-columns:1fr}.demo-side{position:static}.grid3,.community-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.container{width:min(100% - 28px,1120px)}.nav{height:66px}.navlinks{top:65px}.section{padding:65px 0}.hero-inner{padding:55px 0 65px}.hero-art{min-height:235px}.orb{width:220px}.main-anima{font-size:7rem}.orb-label{right:-12px;font-size:.78rem}.grid3,.community-grid,.care-grid{grid-template-columns:1fr}.anima-grid{grid-template-columns:repeat(2,1fr)}.moods{grid-template-columns:repeat(3,1fr)}.form-card,.card{padding:19px}.footer-inner{display:block}.footer-inner>div{margin-bottom:20px}.friend{align-items:flex-start}.state-pill{display:none}.chat-log{height:280px}.chat-compose .btn{padding:12px 15px}.help-panel{padding:21px}h2{font-size:2.25rem}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Nunito",ui-rounded,system-ui,-apple-system,sans-serif}button,input,textarea,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--violet);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:2px;background:var(--mint);border-radius:9px}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.12;letter-spacing:-.035em}h1{font-size:clamp(3.5rem,9vw,7.3rem);margin:.4rem 0 .2rem}h2{font-size:clamp(2.1rem,5vw,3.7rem);margin:.7rem 0 1rem}h3{font-size:1.25rem}.muted{color:var(--muted)}.small{font-size:.86rem}.topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:1000;letter-spacing:.16em;color:var(--purple)}:root[data-theme=dark] .brand{color:#c7b9ff}.brand-mark{width:36px;height:36px;border-radius:13px;background:linear-gradient(140deg,var(--violet),var(--sky),var(--mint));display:grid;place-items:center;color:#25175c;font-size:20px}.navlinks{display:flex;align-items:center;gap:18px}.navlinks a{text-decoration:none;font-size:.88rem;font-weight:800;color:var(--muted)}.navlinks a:hover{color:var(--violet)}.nav-actions{display:flex;align-items:center;gap:8px}.icon-btn,.menu-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:14px;width:42px;height:42px;cursor:pointer;display:grid;place-items:center}.menu-btn{display:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(110deg,var(--mint),var(--sky),#c7b8ff);color:#21184f;font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 9px 22px #5141a31a;transition:transform .18s,box-shadow .18s}.btn:hover{transform:translateY(-2px);box-shadow:0 13px 28px #5141a32b}.btn.secondary{background:var(--surface);border:1px solid var(--line);box-shadow:none;color:var(--ink)}.btn.urgent{background:#fff0f1;color:#9c2438;border:1px solid #ffd1d7;box-shadow:none}.btn.sm{padding:8px 13px;font-size:.8rem}.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 80% 25%,#87d8ff80,transparent 35%),radial-gradient(ellipse at 15% 90%,#a8f0d580,transparent 32%),linear-gradient(130deg,#302078,#5b42c4 55%,#6aafe7)}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff30;border-radius:50%;right:-130px;top:-190px;box-shadow:0 0 0 45px #ffffff09,0 0 0 90px #ffffff08}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:88px 0 96px}.hero .eyebrow{color:#d9fff5}.hero h1 span{color:#b8f5e3}.hero-lead{max-width:590px;color:#f2efff;font-size:1.14rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}.hero .secondary{background:#ffffff17;border-color:#ffffff65;color:white}.hero-note{font-size:.83rem;color:#e2dcff}.hero-art{min-height:360px;display:grid;place-items:center;position:relative}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#ffffffd9,#b6e9ff9c 22%,#b6a4ff55 50%,#ffffff05 70%);border:1px solid #ffffff88;box-shadow:0 0 0 15px #ffffff0b,0 0 90px #b9e8ff66;position:relative}.main-anima{width:190px;height:190px;display:grid;place-items:center;filter:drop-shadow(0 15px 18px #27195c50);animation:float 5s ease-in-out infinite}.spark{position:absolute;color:#d9fff5;font-size:1.5rem}.spark.s1{top:9%;left:18%}.spark.s2{right:10%;top:27%}.spark.s3{bottom:10%;left:14%}@keyframes float{50%{transform:translateY(-12px) rotate(3deg)}}.orb-label{position:absolute;bottom:5%;right:-5%;background:#fff;color:#302078;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);font-size:.9rem;font-weight:900}.section{padding:92px 0}.section.alt{background:linear-gradient(180deg,var(--soft),var(--bg))}.section-head{max-width:740px;margin-bottom:35px}.section-head p{color:var(--muted);font-size:1.05rem}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.card-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:18px;background:var(--soft);font-size:1.7rem;margin-bottom:16px}.card p:last-child{margin-bottom:0}.anima-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.anima-option{border:1px solid var(--line);background:var(--surface);border-radius:22px;padding:16px 10px;text-align:center;cursor:pointer;color:var(--ink);transition:.18s}.anima-option:hover,.anima-option[aria-pressed=true]{border-color:var(--violet);transform:translateY(-3px);box-shadow:0 12px 28px #5141a31a}.anima-option[aria-pressed=true]{background:var(--soft);outline:2px solid #8f79ed50}.animal{width:76px;height:76px;margin:0 auto 8px;display:grid;place-items:center}.anima-option b{display:block}.anima-option small{color:var(--muted);font-size:.76rem}.demo{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:start}.demo-side{position:sticky;top:100px}.profile-card{background:linear-gradient(145deg,#3b268f,#705ce1 65%,#79c9e8);color:#fff;border-radius:28px;padding:24px;overflow:hidden;position:relative}.profile-card:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff4a;border-radius:50%;right:-75px;top:-80px;box-shadow:0 0 0 28px #ffffff0b,0 0 0 56px #ffffff0b}.profile-top{display:flex;align-items:center;gap:14px;position:relative;z-index:1}.profile-emoji{width:84px;height:84px;border-radius:25px;background:#ffffff24;display:grid;place-items:center;flex:none;backdrop-filter:blur(6px)}.profile-card p{color:#e9e5ff}.profile-card .label{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:#c9f7ec;font-weight:900}.profile-card h3{font-size:1.6rem;margin:2px 0}.profile-card .mini{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff40;padding-top:14px;margin-top:16px;font-size:.84rem;position:relative;z-index:1}.form-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}.moods{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:17px 0}.mood{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:17px;padding:12px 5px;cursor:pointer}.mood span{display:block;font-size:1.7rem}.mood small{font-size:.73rem;font-weight:800}.mood[aria-pressed=true]{border:2px solid var(--violet);background:var(--soft)}label{display:block;font-weight:900;font-size:.88rem;margin:15px 0 7px}textarea,input,select{width:100%;border:1px solid var(--line);border-radius:15px;padding:12px 14px;background:var(--bg);color:var(--ink);outline:none}textarea{min-height:94px;resize:vertical}textarea:focus,input:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 3px #8c79e52b}.privacy-box{display:flex;align-items:flex-start;gap:10px;background:var(--soft);padding:13px;border-radius:15px;margin:15px 0;font-size:.85rem}.privacy-box input{width:auto;margin-top:5px}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.preview{margin-top:18px;border-radius:18px;padding:16px;background:linear-gradient(120deg,#e8e1ff,#e1f8f2);color:#292052;display:none}.preview.show{display:block}.preview strong{display:block;font-size:1.1rem}.preview small{color:#5c5680}.status-msg{min-height:24px;color:var(--muted);font-size:.84rem;margin:10px 0 0}.circle-list{display:grid;gap:12px}.friend{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.friend-avatar{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:var(--soft);font-size:1.8rem;flex:none}.friend-info{flex:1;min-width:0}.friend-info b{display:block}.friend-info small{color:var(--muted)}.state-pill{font-size:.75rem;font-weight:900;background:var(--soft);padding:6px 10px;border-radius:99px}.suggestion{border:0;background:none;color:var(--violet);font-weight:900;cursor:pointer}.community-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.community-post{border-radius:22px;padding:21px;background:var(--surface);border:1px solid var(--line)}.community-post .post-emoji{font-size:2rem}.community-post p{margin:10px 0}.community-post small{color:var(--muted)}.chatbox{border-radius:26px;background:var(--surface);border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow)}.chat-head{display:flex;align-items:center;gap:12px;padding:16px 20px;background:linear-gradient(100deg,#3d2a9c,#6c56d8);color:white}.chat-head .face{width:46px;height:46px;display:grid;place-items:center}.chat-head small{display:block;color:#e4ddff}.chat-log{height:310px;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:12px}.bubble{max-width:82%;padding:12px 15px;border-radius:18px;background:var(--soft);align-self:flex-start}.bubble.user{background:linear-gradient(110deg,#b9a9ff,#a6e5ee);color:#24194e;align-self:flex-end}.chat-compose{display:flex;gap:9px;padding:14px;border-top:1px solid var(--line)}.chat-compose input{flex:1;min-width:0}.chat-disclaimer{padding:0 18px 14px;color:var(--muted);font-size:.77rem}.help-panel{border-radius:28px;background:#fff0f1;border:1px solid #ffd4d9;color:#63283a;padding:28px}.help-panel h2{font-size:2rem}.help-links{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.help-links a{display:inline-flex;padding:11px 15px;border-radius:99px;background:#fff;color:#8e233b;font-weight:900;text-decoration:none;border:1px solid #f4c3ca}.help-note{font-size:.86rem;color:#754d57}.kids-stage{position:relative;min-height:270px;border-radius:26px;overflow:hidden;background:linear-gradient(#bdeaff,#e5f9dd 72%,#9edb9e);display:grid;place-items:center;padding:25px;color:#2d4b52}.kids-sun{position:absolute;right:12%;top:12%;width:58px;height:58px;background:#fff0a6;border-radius:50%;box-shadow:0 0 0 14px #fff5c655}.kids-tree{position:absolute;bottom:-25px;font-size:8rem;opacity:.7}.kids-character{font-size:5rem;z-index:1}.kids-prompt{z-index:1;background:#ffffffd9;padding:12px 17px;border-radius:18px;text-align:center;max-width:330px}.kids-choices{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.kids-choices button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 14px;border-radius:99px;cursor:pointer}.kids-choices button[aria-pressed=true]{border-color:var(--violet);background:var(--soft)}.kids-result{font-weight:900;margin-top:13px;min-height:24px}.care-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.footer{padding:42px 0;background:#24175f;color:#eeeaff}.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}.footer a{color:#c8f7eb}.disclaimer{max-width:600px;color:#c9c2e9;font-size:.83rem}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#211653;color:white;padding:12px 18px;border-radius:99px;opacity:0;pointer-events:none;transition:.25s;z-index:60;box-shadow:var(--shadow);max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.prototype{display:inline-flex;gap:7px;align-items:center;border:1px solid #ffffff55;background:#ffffff16;border-radius:99px;padding:6px 11px;color:#fff;font-size:.76rem;font-weight:800}
+@media(max-width:900px){.navlinks{display:none;position:absolute;top:75px;left:0;right:0;padding:15px 22px 20px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-btn{display:block}.hero-inner{grid-template-columns:1fr;text-align:center;padding:68px 0}.hero-lead{margin-inline:auto}.hero-actions{justify-content:center}.hero-art{min-height:280px}.orb{width:270px}.main-anima{width:155px;height:155px}.anima-grid{grid-template-columns:repeat(3,1fr)}.demo{grid-template-columns:1fr}.demo-side{position:static}.grid3,.community-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.container{width:min(100% - 28px,1120px)}.nav{height:66px}.navlinks{top:65px}.section{padding:65px 0}.hero-inner{padding:55px 0 65px}.hero-art{min-height:235px}.orb{width:220px}.main-anima{width:130px;height:130px}.orb-label{right:-12px;font-size:.78rem}.grid3,.community-grid,.care-grid{grid-template-columns:1fr}.anima-grid{grid-template-columns:repeat(2,1fr)}.moods{grid-template-columns:repeat(3,1fr)}.form-card,.card{padding:19px}.footer-inner{display:block}.footer-inner>div{margin-bottom:20px}.friend{align-items:flex-start}.state-pill{display:none}.chat-log{height:280px}.chat-compose .btn{padding:12px 15px}.help-panel{padding:21px}h2{font-size:2.25rem}}
 
 /* ✦ Movimiento suave y detalles vivos */
 :root{scroll-behavior:smooth}
@@ -24,8 +24,8 @@
 .spark{animation:sparkle 2.8s ease-in-out infinite}
 .spark.s2{animation-delay:.7s}.spark.s3{animation-delay:1.3s}
 @keyframes sparkle{0%,100%{opacity:.35;scale:.7}50%{opacity:1;scale:1.25}}
-.card,.anima-option,.community-post,.friend{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,border-color .28s}
-.card:hover,.community-post:hover{transform:translateY(-6px);box-shadow:0 22px 48px #5141a326}
+.card,.anima-option,.community-post,.friend,.circle-card{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,border-color .28s}
+.card:hover,.community-post:hover,.circle-card:hover{transform:translateY(-6px);box-shadow:0 22px 48px #5141a326}
 .anima-option:hover .animal{animation:animalBounce .55s ease}
 @keyframes animalBounce{0%,100%{transform:translateY(0) rotate(0)}35%{transform:translateY(-12px) rotate(-8deg)}70%{transform:translateY(-3px) rotate(7deg)}}
 .btn:active,.mood:active,.kids-choices button:active{transform:scale(.96)}
@@ -61,7 +61,6 @@
 .kids-chat-controls{display:flex;gap:8px}
 .kids-chat-controls input{background:white;min-width:0}
 .kids-chat-controls button{border:0;border-radius:13px;background:#4b8c80;color:white;font-weight:900;padding:9px 13px;cursor:pointer}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
 /* ✦ Capa creativa v2 */
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12102a;--surface:#1d1940;--ink:#f5f1ff;--muted:#bdb6dc;--line:#39325f;--soft:#29234e;--shadow:0 18px 50px #0004}}
@@ -87,9 +86,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @keyframes bp{from{transform:translate(-50%,-50%) scale(.4)}to{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.3);opacity:0}}
 .trail{position:fixed;z-index:80;pointer-events:none;color:#a98bff;font-size:14px;animation:trail .8s ease-out forwards}
 @keyframes trail{to{transform:translateY(18px) scale(.3) rotate(90deg);opacity:0}}
-.card,.community-post,.form-card{position:relative;overflow:hidden}
-.card:before,.community-post:before,.form-card:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),#8f79ed26,transparent 60%)}
-.card:hover:before,.community-post:hover:before,.form-card:hover:before{opacity:1}
+.card,.community-post,.form-card,.circle-card{position:relative;overflow:hidden}
+.card:before,.community-post:before,.form-card:before,.circle-card:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),#8f79ed26,transparent 60%)}
+.card:hover:before,.community-post:hover:before,.form-card:hover:before,.circle-card:hover:before{opacity:1}
 .card-icon{transition:transform .3s}.card:hover .card-icon{transform:rotate(-8deg) scale(1.12)}
 .community-post .post-emoji{display:inline-block;animation:float 4s ease-in-out infinite}
 .community-post:nth-child(2) .post-emoji{animation-delay:-1.3s}.community-post:nth-child(3) .post-emoji{animation-delay:-2.6s}
@@ -155,15 +154,160 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @keyframes snooze{50%{transform:scale(.94) translateY(4px)}}
 .kids-character.breathing{animation:breathe 9s ease-in-out infinite!important}
 @keyframes breathe{0%{transform:scale(1)}33%,66%{transform:scale(1.3)}100%{transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){.kids-fx,.fp,.aur,.trail,.bp{display:none}}
+
+/* ✦ NUEVOS ESTILOS: ÁNIMAS SVG, MI CÍRCULO, SANTUARIO DE ÁNIMA, MAPA Y ESTOY AQUÍ CONTIGO */
+.anima-svg{width:100%;height:100%;overflow:visible;display:block}
+.anima-svg .anima-body{transform-origin:50% 82%;animation:animaBreathe 3.8s ease-in-out infinite}
+.anima-svg .anima-eyes{transform-origin:50% 50%;animation:animaBlink 4.6s infinite}
+.anima-svg .anima-aura{transform-origin:50% 50%;animation:auraPulse 4s ease-in-out infinite}
+.anima-svg .anima-ear-l{transform-origin:34% 34%;animation:earTwitch 5.2s ease-in-out infinite}
+.anima-svg .anima-ear-r{transform-origin:66% 34%;animation:earTwitch 5.2s ease-in-out infinite .7s}
+@keyframes animaBreathe{0%,100%{transform:scale(1,1) translateY(0)}50%{transform:scale(1.03,.97) translateY(1.5px)}}
+@keyframes animaBlink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@keyframes auraPulse{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:.95;transform:scale(1.04)}}
+@keyframes earTwitch{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-6deg)}96%{transform:rotate(4deg)}}
+
+.anima-react-pet .anima-body{animation:animaPet .65s ease!important}
+.anima-react-hug .anima-body{animation:animaHug .85s ease!important}
+.anima-react-play .anima-body{animation:animaPlay .75s ease!important}
+@keyframes animaPet{0%,100%{transform:scale(1)}35%{transform:scale(1.08,.92) translateY(3px)}70%{transform:scale(.97,1.04) translateY(-4px)}}
+@keyframes animaHug{0%,100%{transform:scale(1)}40%{transform:scale(1.13,1.07)}70%{transform:scale(.96,.98)}}
+@keyframes animaPlay{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-14px) rotate(-10deg)}65%{transform:translateY(-6px) rotate(10deg)}}
+
+/* Santuario interactivo del Ánima */
+.anima-sanctuary{margin-top:16px;border-radius:26px;padding:20px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.sanctuary-stage{position:relative;border-radius:22px;padding:18px 16px 14px;min-height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--line);transition:background .45s ease}
+.sanctuary-stage.env-nube{background:radial-gradient(circle at 50% 20%,#ffffff,#e6f4ff 55%,#efe8ff)}
+.sanctuary-stage.env-bosque{background:radial-gradient(circle at 50% 20%,#f4fff9,#d5f7e8 55%,#d8ecff)}
+.sanctuary-stage.env-estrellas{background:radial-gradient(circle at 50% 20%,#3c2a85,#231858 65%,#18123c);color:#fff}
+.sanctuary-stage.env-aurora{background:linear-gradient(135deg,#e9ddff,#d5f5ff 50%,#d9f9ec)}
+:root[data-theme="dark"] .sanctuary-stage.env-nube{background:radial-gradient(circle at 50% 20%,#342c66,#221c4a)}
+:root[data-theme="dark"] .sanctuary-stage.env-bosque{background:radial-gradient(circle at 50% 20%,#1f4246,#1a2648)}
+:root[data-theme="dark"] .sanctuary-stage.env-aurora{background:linear-gradient(135deg,#33256c,#224163 50%,#1f4946)}
+.sanctuary-decor{position:absolute;inset:10px 14px;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-end;font-size:1.5rem;opacity:.9}
+.sanctuary-decor-top{position:absolute;top:10px;left:14px;right:14px;display:flex;justify-content:space-between;font-size:1.15rem;pointer-events:none}
+.sanctuary-pet-wrap{width:132px;height:132px;cursor:pointer;position:relative;z-index:2;transition:transform .2s}
+.sanctuary-pet-wrap:hover{transform:scale(1.04)}
+.sanctuary-speech{position:relative;z-index:2;margin-top:8px;background:color-mix(in srgb,var(--surface) 92%,transparent);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:9px 14px;font-size:.86rem;text-align:center;max-width:96%;box-shadow:0 8px 20px #2b1d6614}
+.sanctuary-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.sanctuary-btn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:15px;padding:9px 8px;font-size:.82rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:.18s}
+.sanctuary-btn:hover{border-color:var(--violet);background:var(--soft);transform:translateY(-2px)}
+.sanctuary-custom{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.custom-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px;flex-wrap:wrap}
+.custom-row span{font-size:.78rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.swatch-group{display:flex;gap:6px;flex-wrap:wrap}
+.swatch{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:transform .15s}
+.swatch[aria-pressed=true]{transform:scale(1.18);box-shadow:0 0 0 2px var(--violet)}
+.chip-mini{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:4px 10px;font-size:.76rem;font-weight:800;cursor:pointer}
+.chip-mini[aria-pressed=true]{background:var(--soft);border-color:var(--violet);color:var(--violet)}
+
+/* Mi círculo: tarjetas interactivas */
+.circle-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.circle-filters{display:flex;flex-wrap:wrap;gap:8px}
+.filter-pill{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:8px 14px;font-size:.83rem;font-weight:800;cursor:pointer;transition:.18s}
+.filter-pill[aria-pressed=true]{background:linear-gradient(110deg,var(--mint),var(--sky),#c7b8ff);color:#21184f;border-color:transparent}
+.circle-cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.circle-card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px}
+.circle-card-top{display:flex;align-items:center;gap:14px}
+.circle-anima-box{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;flex:none;position:relative;border:1px solid var(--line);cursor:pointer}
+.circle-status-dot{position:absolute;bottom:-4px;right:-4px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:1rem;background:var(--surface);border:2px solid var(--line);box-shadow:0 4px 10px #0001}
+.circle-meta{flex:1;min-width:0}
+.circle-name-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.circle-name-row h3{margin:0;font-size:1.22rem}
+.circle-time{font-size:.76rem;color:var(--muted);font-weight:700}
+.mood-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:99px;font-size:.78rem;font-weight:900;margin-top:5px}
+.circle-msg{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:12px 14px;font-size:.93rem;margin:0;position:relative}
+.circle-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.c-act-btn{flex:1 1 auto;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:99px;padding:9px 12px;font-size:.81rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:5px;transition:.18s}
+.c-act-btn:hover{border-color:var(--violet);transform:translateY(-2px)}
+.c-act-btn.sent{background:linear-gradient(110deg,var(--mint),var(--sky));color:#1f164b;border-color:transparent}
+.c-profile-btn{border:1px solid var(--line);background:var(--surface);color:var(--violet);border-radius:99px;padding:9px 13px;font-size:.81rem;font-weight:900;cursor:pointer}
+.c-profile-btn:hover{background:var(--soft)}
+
+/* Modal perfil de amigo */
+.modal-backdrop{position:fixed;inset:0;background:#19123b88;backdrop-filter:blur(8px);z-index:85;display:none;place-items:center;padding:18px}
+.modal-backdrop.open{display:grid;animation:fadeIn .22s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal-card{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:28px;width:min(540px,100%);max-height:90vh;overflow:auto;padding:26px;box-shadow:0 28px 80px #140c3d55;position:relative}
+.modal-close{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;font-size:1.1rem}
+.modal-hero{display:flex;align-items:center;gap:16px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.modal-anima{width:92px;height:92px;border-radius:26px;background:var(--soft);display:grid;place-items:center;flex:none}
+.modal-log{margin-top:14px;display:flex;flex-direction:column;gap:8px;max-height:175px;overflow:auto;padding:10px;background:var(--bg);border-radius:16px;border:1px solid var(--line)}
+.modal-msg{padding:9px 13px;border-radius:14px;font-size:.86rem;max-width:88%}
+.modal-msg.me{align-self:flex-end;background:linear-gradient(110deg,#c5b8ff,#a8e8f5);color:#20164d}
+.modal-msg.them{align-self:flex-start;background:var(--surface);border:1px solid var(--line)}
+
+/* Nuestro mapa + Privacidad */
+.map-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
+.map-canvas{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:linear-gradient(155deg,#e4f4ff 0%,#efe9ff 48%,#e3fbf3 100%);min-height:440px}
+:root[data-theme="dark"] .map-canvas{background:linear-gradient(155deg,#1d274e 0%,#292056 48%,#1c3b46 100%)}
+.map-svg-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.map-hud-top{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:16px 18px}
+.audience-pill{display:inline-flex;align-items:center;gap:7px;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.8rem;font-weight:800;box-shadow:0 6px 18px #271a6614}
+.map-pin{position:absolute;z-index:4;transform:translate(-50%,-50%);border:0;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;transition:transform .22s}
+.map-pin:hover,.map-pin[aria-pressed=true]{transform:translate(-50%,-54%) scale(1.08);z-index:6}
+.pin-ring{width:62px;height:62px;border-radius:50%;padding:5px;background:var(--surface);border:3px solid var(--violet);box-shadow:0 12px 26px #2a1c692e;position:relative;display:grid;place-items:center}
+.map-pin[aria-pressed=true] .pin-ring{border-color:#45c7a3;box-shadow:0 0 0 6px #98ecd466,0 14px 28px #2a1c693a}
+.pin-approx-zone{position:absolute;width:118px;height:118px;border-radius:50%;background:radial-gradient(circle,#86d4ff44,#98ecd422 65%,transparent 72%);border:1px dashed #6a4de066;pointer-events:none;z-index:-1}
+.pin-tag{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font-size:.75rem;font-weight:900;white-space:nowrap;box-shadow:0 6px 14px #0001}
+.pin-tag span{margin-left:3px}
+.map-detail-card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow)}
+.privacy-panel{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:var(--shadow)}
+.privacy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.priv-item{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.switch{position:relative;display:inline-block;width:46px;height:26px;flex:none}
+.switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;cursor:pointer;inset:0;background:#cfc7ee;border-radius:99px;transition:.25s}
+.slider:before{content:"";position:absolute;height:20px;width:20px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.25s;box-shadow:0 2px 5px #0002}
+.switch input:checked + .slider{background:linear-gradient(110deg,#6a4de0,#55c9aa)}
+.switch input:checked + .slider:before{transform:translateX(20px)}
+.minor-box{margin-top:12px;padding:13px 15px;border-radius:16px;background:var(--soft);border:1px solid var(--line);font-size:.84rem}
+
+/* Estoy aquí contigo */
+.here-wrap{background:linear-gradient(135deg,color-mix(in srgb,var(--soft) 85%,var(--surface)),color-mix(in srgb,#e2f9f2 45%,var(--surface)));border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:var(--shadow)}
+.here-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.here-tile{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px;text-align:left;cursor:pointer;transition:.2s;display:flex;flex-direction:column;gap:8px;color:var(--ink)}
+.here-tile:hover{transform:translateY(-4px);border-color:var(--violet);box-shadow:0 16px 34px #4f3da31f}
+.here-tile .tile-icon{font-size:1.8rem}
+.here-composer{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.voice-wave{display:inline-flex;align-items:center;gap:3px;height:20px;vertical-align:middle}
+.voice-wave i{display:inline-block;width:3px;height:8px;background:var(--violet);border-radius:9px;animation:waveBar 1s ease-in-out infinite}
+.voice-wave i:nth-child(2){animation-delay:.15s;height:15px}
+.voice-wave i:nth-child(3){animation-delay:.3s;height:18px}
+.voice-wave i:nth-child(4){animation-delay:.45s;height:11px}
+.voice-wave i:nth-child(5){animation-delay:.6s;height:16px}
+@keyframes waveBar{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(1.25)}}
+.shared-moments-feed{margin-top:16px;display:grid;gap:10px}
+.moment-item{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.9rem;animation:messageIn .35s ease}
+
+/* Reducir movimiento manual + sistema */
+html.reduce-motion *,html.reduce-motion *:before,html.reduce-motion *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+html.reduce-motion .reveal{opacity:1;transform:none}
+html.reduce-motion .kids-fx,html.reduce-motion .fp,html.reduce-motion .aur,html.reduce-motion .trail,html.reduce-motion .bp{display:none!important}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.kids-fx,.fp,.aur,.trail,.bp{display:none}}
+
+@media(max-width:900px){.circle-cards-grid,.map-layout,.here-grid,.privacy-grid{grid-template-columns:1fr}.here-composer{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div id="sp" aria-hidden="true"></div>
 <header class="topbar"><div class="container nav">
 <a class="brand" href="#inicio"><span class="brand-mark">✧</span>KAIROS</a>
-<nav class="navlinks" id="navlinks" aria-label="Navegación principal"><a href="#proposito">Nuestro propósito</a><a href="#animas">Ánimas</a><a href="#demo">ANIMAS</a><a href="#kids">Kids</a><a href="#familias">Familias</a></nav>
-<div class="nav-actions"><button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema">◐</button><a class="btn urgent" href="#ayuda">Necesito ayuda</a><button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+<nav class="navlinks" id="navlinks" aria-label="Navegación principal">
+  <a href="#proposito">Propósito</a>
+  <a href="#animas">Ánimas</a>
+  <a href="#demo">Mi espacio</a>
+  <a href="#circulo">Mi círculo</a>
+  <a href="#mapa">Nuestro mapa</a>
+  <a href="#estoy-aqui">Estoy aquí</a>
+  <a href="#kids">Kids</a>
+</nav>
+<div class="nav-actions">
+  <button class="icon-btn" id="motionBtn" aria-label="Alternar reducción de movimiento" aria-pressed="false" title="Reducir movimiento">✦</button>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
+  <a class="btn urgent" href="#ayuda">Necesito ayuda</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+</div>
 </div></header>
 
 <main>
@@ -171,47 +315,264 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <div><span class="prototype">✦ Prototipo interactivo · datos de ejemplo</span><p class="eyebrow" style="margin-top:22px">Una campaña para estar presentes</p>
 <h1>KAI<span>R</span>OS</h1><p style="font-size:1.35rem;font-weight:800">El momento oportuno para estar presente.</p>
 <p class="hero-lead">No tienes que aparentar que todo está bien. KAIROS es una invitación a expresar cómo te sientes, conectar con quienes te importan y encontrar apoyo cuando lo necesitas.</p>
-<div class="hero-actions"><a class="btn" href="#demo">Explorar ANIMAS <span>↗</span></a><a class="btn secondary" href="#proposito">Conocer el proyecto</a></div>
-<p class="hero-note">Un espacio de acompañamiento emocional. No sustituye la atención psicológica ni los servicios de emergencia.</p></div>
-<div class="hero-art" aria-label="Ilustración de un Ánima"><div class="orb"><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><span class="main-anima" id="heroAnimal">🦊</span><div class="orb-label">Tu compañía, a tu ritmo ♡</div></div></div>
+<div class="hero-actions"><a class="btn" href="#circulo">Explorar ANIMAS <span>↗</span></a><a class="btn secondary" href="#proposito">Conocer el proyecto</a></div>
+<p class="hero-note">«No se trata de vigilar a quienes queremos, sino de hacerles saber que estamos aquí». No sustituye atención psicológica ni emergencias.</p></div>
+<div class="hero-art" aria-label="Ilustración de un Ánima"><div class="orb"><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><div class="main-anima" id="heroAnimal"></div><div class="orb-label">Tu compañía, a tu ritmo ♡</div></div></div>
 </div></section>
 
 <section class="section" id="proposito"><div class="container"><div class="section-head"><span class="eyebrow">Por qué existimos</span><h2>Sentir no debería dar vergüenza.</h2><p>En un mundo que nos invita a mostrar nuestra mejor versión, KAIROS abre un espacio para compartir también los días difíciles. No buscamos vidas perfectas: buscamos conexiones más honestas.</p></div>
 <div class="grid3"><article class="card"><div class="card-icon">💬</div><h3>Expresar sin actuar</h3><p class="muted">Compartir tu estado emocional sin tener que convertirlo en una publicación perfecta ni justificar lo que sientes.</p></article><article class="card"><div class="card-icon">🫶</div><h3>Acercarnos a tiempo</h3><p class="muted">Facilitar pequeños gestos de comunicación entre amistades y familia, antes de que el silencio se vuelva aislamiento.</p></article><article class="card"><div class="card-icon">🌱</div><h3>Encontrar apoyo</h3><p class="muted">Ofrecer orientación para acercarte a personas de confianza y a recursos profesionales cuando haga falta.</p></article></div></div></section>
 
-<section class="section alt" id="animas"><div class="container"><div class="section-head"><span class="eyebrow">Conoce a tu compañía</span><h2>Un Ánima que se parece a tu forma de estar.</h2><p>Elige el animal que conecte contigo. Su personalidad acompaña la experiencia; no define quién eres ni determina cómo deberías sentirte.</p></div>
+<!-- 2. REDISEÑO DE LAS ÁNIMAS -->
+<section class="section alt" id="animas"><div class="container"><div class="section-head"><span class="eyebrow">Conoce a tu compañía</span><h2>Un Ánima que se parece a tu forma de estar.</h2><p>Pequeñas criaturas luminosas inspiradas en animalitos tiernos. Su personalidad acompaña la experiencia con calidez; nunca mide rachas ni te exige estar bien.</p></div>
 <div class="anima-grid" id="animaPicker">
-<button class="anima-option" data-animal="🦊" data-name="Zorro" data-desc="Directo, atento y protector" aria-pressed="true"><span class="animal">🦊</span><b>Zorro</b><small>Directo y protector</small></button>
-<button class="anima-option" data-animal="🐻" data-name="Oso" data-desc="Sereno, firme y paciente" aria-pressed="false"><span class="animal">🐻</span><b>Oso</b><small>Sereno y paciente</small></button>
-<button class="anima-option" data-animal="🐰" data-name="Conejo" data-desc="Dulce, curioso y cercano" aria-pressed="false"><span class="animal">🐰</span><b>Conejo</b><small>Dulce y curioso</small></button>
-<button class="anima-option" data-animal="🦝" data-name="Mapache" data-desc="Ocurrente, leal y espontáneo" aria-pressed="false"><span class="animal">🦝</span><b>Mapache</b><small>Ocurrente y leal</small></button>
-<button class="anima-option" data-animal="🐻‍❄️" data-name="Oso polar" data-desc="Tranquilo y reconfortante" aria-pressed="false"><span class="animal">🐻‍❄️</span><b>Oso polar</b><small>Tranquilo y reconfortante</small></button>
-<button class="anima-option" data-animal="🦉" data-name="Búho" data-desc="Observador y reflexivo" aria-pressed="false"><span class="animal">🦉</span><b>Búho</b><small>Observador y reflexivo</small></button>
+  <button class="anima-option" data-key="chispa" aria-pressed="true"><span class="animal" data-render="chispa"></span><b>Chispa 🦊</b><small>Curioso, protector y directo</small></button>
+  <button class="anima-option" data-key="momo" aria-pressed="false"><span class="animal" data-render="momo"></span><b>Momo 🐻</b><small>Tranquilo, paciente y cálido</small></button>
+  <button class="anima-option" data-key="nubi" aria-pressed="false"><span class="animal" data-render="nubi"></span><b>Nubi 🐰</b><small>Dulce, sensible y soñador</small></button>
+  <button class="anima-option" data-key="pixel" aria-pressed="false"><span class="animal" data-render="pixel"></span><b>Píxel 🦝</b><small>Divertido, leal y espontáneo</small></button>
+  <button class="anima-option" data-key="lumi" aria-pressed="false"><span class="animal" data-render="lumi"></span><b>Lumi 🦉</b><small>Observadora y comprensiva</small></button>
+  <button class="anima-option" data-key="copito" aria-pressed="false"><span class="animal" data-render="copito"></span><b>Copito 🐻‍❄️</b><small>Sereno y reconfortante</small></button>
 </div></div></section>
 
-<section class="section" id="demo"><div class="container"><div class="section-head"><span class="eyebrow">Explora la experiencia</span><h2>ANIMAS: una red más íntima.</h2><p>Una demostración de cómo podría sentirse la aplicación. Los datos que aparecen aquí son ejemplos locales de esta página: no se envían a un servidor ni se comparten con otras personas.</p></div>
-<div class="demo"><aside class="demo-side"><div class="profile-card"><div class="profile-top"><div class="profile-emoji" id="profileAnimal">🦊</div><div><span class="label">Tu Ánima</span><h3 id="profileName">Zorro</h3><p id="profileDesc" style="margin:0">Directo, atento y protector</p></div></div><div class="mini"><span>Tu espacio</span><strong>Sin rachas ni presión ✦</strong></div></div>
-<div class="card" style="margin-top:15px"><h3>Tu círculo</h3><p class="muted small">En una versión real, tú eliges quién puede ver cada actualización y puedes cambiarlo cuando quieras.</p><div class="circle-list"><div class="friend"><div class="friend-avatar">🌼</div><div class="friend-info"><b>Una persona de confianza</b><small>Ejemplo de contacto</small></div><span class="state-pill">Demo</span></div><div class="friend"><div class="friend-avatar">🌙</div><div class="friend-info"><b>Alguien de tu familia</b><small>Ejemplo de contacto</small></div><span class="state-pill">Demo</span></div></div></div></aside>
-<div class="form-card"><span class="eyebrow">Mi ánimo</span><h3>¿Cómo estás hoy?</h3><p class="muted small">No hay respuestas buenas o malas. Puedes elegir una opción y escribir algo si te nace.</p>
-<div class="moods" id="moodPicker"><button class="mood" data-mood="Muy bien" data-emoji="😄" aria-pressed="false"><span>😄</span><small>Muy bien</small></button><button class="mood" data-mood="Bien" data-emoji="🙂" aria-pressed="false"><span>🙂</span><small>Bien</small></button><button class="mood" data-mood="Más o menos" data-emoji="😐" aria-pressed="false"><span>😐</span><small>Regular</small></button><button class="mood" data-mood="Triste" data-emoji="😢" aria-pressed="false"><span>😢</span><small>Triste</small></button><button class="mood" data-mood="Abrumado/a" data-emoji="😵‍💫" aria-pressed="false"><span>😵‍💫</span><small>Abrumado/a</small></button></div>
-<label for="moodNote">¿Quieres agregar algo? <span class="muted">(opcional)</span></label><textarea id="moodNote" maxlength="180" placeholder="Hoy me gustaría..."></textarea>
-<div class="privacy-box"><input type="checkbox" id="shareCircle"><div><b>Compartir con mi círculo</b><br><span class="muted">Desactivado por defecto en esta demostración. En el producto final, el permiso será específico y revocable.</span></div></div>
+<!-- 3. MI ESPACIO + COMPAÑERO DIGITAL INTERACTIVO -->
+<section class="section" id="demo"><div class="container"><div class="section-head"><span class="eyebrow">Tu rincón personal</span><h2>ANIMAS: tu compañero y tu estado hoy.</h2><p>Interactúa con tu Ánima, personaliza su pequeño espacio y registra cómo te sientes sin presiones ni rachas. Todo funciona localmente en esta demostración.</p></div>
+<div class="demo"><aside class="demo-side"><div class="profile-card"><div class="profile-top"><div class="profile-emoji" id="profileAnimal"></div><div><span class="label">Tu Ánima compañera</span><h3 id="profileName">Chispa</h3><p id="profileDesc" style="margin:0">Zorrito curioso, protector y directo</p></div></div><div class="mini"><span>Tu ritmo</span><strong>Sin rachas ni culpa ✦</strong></div></div>
+
+<!-- Espacio personal e interacciones con el Ánima -->
+<div class="anima-sanctuary" aria-label="Espacio personal de tu Ánima">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <strong style="font-size:.95rem">✨ Espacio de <span id="sanctuaryTitleName">Chispa</span></strong>
+    <span class="small muted" id="sanctuaryMoodLabel">Acompañándote</span>
+  </div>
+  <div class="sanctuary-stage env-nube" id="sanctuaryStage">
+    <div class="sanctuary-decor-top"><span id="decorTopL">☁️</span><span id="decorTopR">✨</span></div>
+    <div class="sanctuary-pet-wrap" id="sanctuaryPet" role="button" tabindex="0" aria-label="Acariciar a tu Ánima"></div>
+    <div class="sanctuary-decor"><span id="decorBotL">🪴</span><span id="decorBotR">🕯️</span></div>
+    <div class="sanctuary-speech" id="sanctuarySpeech" aria-live="polite">Estoy aquí contigo. Si quieres acariciarme o descansar en silencio, ambos planes me parecen geniales.</div>
+  </div>
+  <div class="sanctuary-actions">
+    <button type="button" class="sanctuary-btn" id="btnPet">🤍 Acariciar</button>
+    <button type="button" class="sanctuary-btn" id="btnHug">🫂 Abrazar</button>
+    <button type="button" class="sanctuary-btn" id="btnPlay">✨ Jugar</button>
+  </div>
+  <div class="sanctuary-custom">
+    <div class="custom-row">
+      <span>Brillo</span>
+      <div class="swatch-group" id="auraPicker">
+        <button type="button" class="swatch" data-aura="#a98bff" style="background:#a98bff" aria-label="Aura lila" aria-pressed="true"></button>
+        <button type="button" class="swatch" data-aura="#86d4ff" style="background:#86d4ff" aria-label="Aura cielo" aria-pressed="false"></button>
+        <button type="button" class="swatch" data-aura="#98ecd4" style="background:#98ecd4" aria-label="Aura menta" aria-pressed="false"></button>
+        <button type="button" class="swatch" data-aura="#ffb8d9" style="background:#ffb8d9" aria-label="Aura rosa suave" aria-pressed="false"></button>
+      </div>
+    </div>
+    <div class="custom-row">
+      <span>Accesorio</span>
+      <div class="swatch-group" id="accPicker">
+        <button type="button" class="chip-mini" data-acc="none" aria-pressed="true">Natural</button>
+        <button type="button" class="chip-mini" data-acc="star" aria-pressed="false">⭐ Estrella</button>
+        <button type="button" class="chip-mini" data-acc="scarf" aria-pressed="false">🧣 Bufanda</button>
+        <button type="button" class="chip-mini" data-acc="flower" aria-pressed="false">🌸 Flor</button>
+      </div>
+    </div>
+    <div class="custom-row" style="margin-bottom:0">
+      <span>Rincón</span>
+      <div class="swatch-group" id="envPicker">
+        <button type="button" class="chip-mini" data-env="nube" aria-pressed="true">☁️ Nube</button>
+        <button type="button" class="chip-mini" data-env="bosque" aria-pressed="false">🌿 Bosque</button>
+        <button type="button" class="chip-mini" data-env="estrellas" aria-pressed="false">🌌 Noche</button>
+        <button type="button" class="chip-mini" data-env="aurora" aria-pressed="false">🌈 Aurora</button>
+      </div>
+    </div>
+  </div>
+</div>
+</aside>
+
+<div class="form-card"><span class="eyebrow">Mi ánimo</span><h3>¿Cómo estás hoy?</h3><p class="muted small">No hay respuestas buenas o malas. Tu Ánima adaptará su expresión a lo que elijas, sin juzgar ni pedirte explicaciones.</p>
+<div class="moods" id="moodPicker">
+  <button class="mood" data-mood="Feliz" data-state="happy" data-emoji="😊" aria-pressed="false"><span>😊</span><small>Feliz</small></button>
+  <button class="mood" data-mood="Tranquilo/a" data-state="calm" data-emoji="😌" aria-pressed="false"><span>😌</span><small>Tranquilo/a</small></button>
+  <button class="mood" data-mood="Vulnerable" data-state="vulnerable" data-emoji="🥺" aria-pressed="false"><span>🥺</span><small>Vulnerable</small></button>
+  <button class="mood" data-mood="Triste" data-state="sad" data-emoji="😔" aria-pressed="false"><span>😔</span><small>Triste</small></button>
+  <button class="mood" data-mood="Abrumado/a" data-state="overwhelmed" data-emoji="😵‍💫" aria-pressed="false"><span>😵‍💫</span><small>Abrumado/a</small></button>
+</div>
+<label for="moodNote">¿Quieres agregar algo? <span class="muted">(opcional)</span></label><textarea id="moodNote" maxlength="180" placeholder="Hoy me gustaría que supieran que..."></textarea>
+<div class="privacy-box"><input type="checkbox" id="shareCircle"><div><b>Compartir con mi círculo de confianza</b><br><span class="muted">Desactivado por defecto. Si lo activas en esta demo, verás tu tarjeta reflejada también en la sección «Mi círculo».</span></div></div>
 <div class="form-actions"><button class="btn" id="saveMood">Guardar mi estado</button><button class="btn secondary" id="clearMood">Limpiar</button></div><div class="status-msg" id="moodStatus" aria-live="polite"></div>
 <div class="preview" id="moodPreview"><small>VISTA PREVIA · SOLO EN ESTE DISPOSITIVO</small><strong id="previewTitle"></strong><span id="previewNote"></span></div>
 </div></div></div></section>
 
-<section class="section alt" id="circulo"><div class="container"><div class="section-head"><span class="eyebrow">Conexiones reales</span><h2>A veces, estar presente empieza con un mensaje.</h2><p>La idea de Mi círculo es ayudarte a notar cómo están las personas que elegiste y facilitar una forma respetuosa de acercarte.</p></div>
-<div class="grid3"><article class="card"><div class="card-icon">💌</div><h3>Mensajes sin presión</h3><p class="muted">“Vi que hoy ha sido un día pesado. ¿Quieres platicar o prefieres que te acompañe en silencio?”</p></article><article class="card"><div class="card-icon">🔐</div><h3>Permisos claros</h3><p class="muted">Cada persona decide qué comparte, con quién y durante cuánto tiempo. Nunca se publica un estado privado por defecto.</p></article><article class="card"><div class="card-icon">🤝</div><h3>Del mensaje al encuentro</h3><p class="muted">La tecnología puede abrir la puerta, pero el acompañamiento significativo sucede entre personas.</p></article></div></div></section>
+<!-- 1. NUEVA SECCIÓN: MI CÍRCULO -->
+<section class="section alt" id="circulo"><div class="container">
+<div class="section-head">
+  <span class="eyebrow">Mi círculo de confianza</span>
+  <h2>Saber cómo están, sin invadir ni comparar.</h2>
+  <p>Un espacio íntimo con las personas que elegiste. Sin contadores públicos ni métricas de popularidad: solo gestos cálidos para decir «aquí estoy».</p>
+</div>
+
+<div class="circle-toolbar">
+  <div class="circle-filters" id="circleFilters" role="group" aria-label="Filtrar círculo">
+    <button type="button" class="filter-pill" data-filter="all" aria-pressed="true">Todos (4)</button>
+    <button type="button" class="filter-pill" data-filter="support" aria-pressed="false">Necesitan apapacho 🥺😔</button>
+    <button type="button" class="filter-pill" data-filter="calm" aria-pressed="false">En calma o alegres 😌😊</button>
+  </div>
+  <span class="small muted">Haz clic en una tarjeta o en «Ver perfil» para acompañar</span>
+</div>
+
+<div class="circle-cards-grid" id="circleCardsGrid"></div>
+</div></section>
+
+<!-- 4. NUEVA SECCIÓN: NUESTRO MAPA + PRIVACIDAD ESTRICTA -->
+<section class="section" id="mapa"><div class="container">
+<div class="section-head">
+  <span class="eyebrow">Nuestro mapa · Demostración ilustrativa</span>
+  <h2>Cerca en el corazón, con permisos claros.</h2>
+  <p>Una vista ilustrada y amigable de quienes decidieron compartir su zona aproximada. No es rastreo en tiempo real ni una herramienta de vigilancia o rescate.</p>
+</div>
+
+<div class="map-layout">
+  <div>
+    <div class="map-canvas" id="mapCanvas" aria-label="Mapa ilustrado del círculo de confianza">
+      <svg class="map-svg-bg" viewBox="0 0 800 500" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-20,380 Q180,310 380,360 T830,320 L830,520 L-20,520 Z" fill="#98ecd4" opacity=".28"/>
+        <path d="M-20,120 Q230,190 460,110 T830,150" fill="none" stroke="#86d4ff" stroke-width="26" stroke-linecap="round" opacity=".38"/>
+        <path d="M160,-10 Q210,230 140,510" fill="none" stroke="#ffffff" stroke-width="14" stroke-dasharray="14 14" opacity=".55"/>
+        <path d="M540,-10 Q490,260 610,510" fill="none" stroke="#ffffff" stroke-width="14" stroke-dasharray="14 14" opacity=".55"/>
+        <circle cx="150" cy="140" r="65" fill="#c7b8ff" opacity=".2"/>
+        <circle cx="620" cy="370" r="85" fill="#86d4ff" opacity=".22"/>
+      </svg>
+
+      <div class="map-hud-top">
+        <div class="audience-pill" id="mapAudienceIndicator">👁️ Visible para: <strong>Solo tu círculo íntimo (4)</strong></div>
+        <div class="audience-pill">🛡️ Ubicación aproximada · Demo</div>
+      </div>
+
+      <div id="mapPinsLayer"></div>
+    </div>
+
+    <!-- Controles explícitos de privacidad y seguridad -->
+    <div class="privacy-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+        <h3 style="margin:0;font-size:1.1rem">🔐 Tus permisos de ubicación</h3>
+        <span class="state-pill" id="myShareBadge">Pausado por defecto</span>
+      </div>
+      <p class="muted small" style="margin:6px 0 0">Tu ubicación nunca se comparte sin tu permiso expreso. Puedes pausarla o revocarla en un toque.</p>
+
+      <div class="privacy-grid">
+        <div class="priv-item">
+          <div>
+            <b style="font-size:.88rem">Compartir mi zona</b>
+            <div class="small muted">Consentimiento explícito</div>
+          </div>
+          <label class="switch" aria-label="Activar o pausar mi ubicación">
+            <input type="checkbox" id="toggleMyLocation">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="priv-item">
+          <div>
+            <b style="font-size:.88rem">Radio aproximado (~1 km)</b>
+            <div class="small muted">Oculta dirección exacta</div>
+          </div>
+          <label class="switch" aria-label="Mantener ubicación aproximada">
+            <input type="checkbox" id="toggleApproxOnly" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px">
+        <label for="audienceSelect" style="margin:0;font-size:.83rem">¿Quién puede verla?</label>
+        <select id="audienceSelect" style="width:auto;padding:8px 12px;font-size:.84rem">
+          <option value="Solo mi círculo íntimo (4)">Solo mi círculo íntimo (4)</option>
+          <option value="Solo 1 persona de confianza">Solo 1 persona de confianza</option>
+          <option value="Nadie (Acceso revocado)">Nadie (Acceso revocado)</option>
+        </select>
+        <button type="button" class="btn secondary sm" id="revokeLocationBtn">Revocar ahora</button>
+      </div>
+
+      <div class="minor-box">
+        <strong>👨‍👩‍👧 Protección para menores:</strong> En cuentas de niñas, niños o adolescentes, compartir ubicación permanece desactivado por defecto, requiere autorización verificada de madres, padres o tutores, y prohíbe cualquier visibilidad fuera del núcleo familiar aprobado.
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta de detalle del marcador seleccionado -->
+  <aside class="map-detail-card" id="mapDetailCard" aria-live="polite"></aside>
+</div>
+</div></section>
+
+<!-- 5. NUEVA INTERACCIÓN: ESTOY AQUÍ CONTIGO -->
+<section class="section alt" id="estoy-aqui"><div class="container">
+<div class="here-wrap">
+  <div class="section-head" style="margin-bottom:14px">
+    <span class="eyebrow">Estoy aquí contigo</span>
+    <h2 style="font-size:clamp(1.8rem,4vw,2.8rem)">Acompañar sin exigir respuesta.</h2>
+    <p>A veces quien pasa un mal día no tiene energía para conversar. Envía un gesto suave que diga «no tienes que contestarme ahora, solo quiero que sepas que cuentas conmigo».</p>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+    <label for="hereRecipient" style="margin:0">Para:</label>
+    <select id="hereRecipient" style="width:auto;min-width:210px">
+      <option value="chispa">Chispa 🦊 (Vulnerable 🥺)</option>
+      <option value="nubi">Nubi 🐰 (Triste 😔)</option>
+      <option value="momo">Momo 🐻 (Tranquilo 😌)</option>
+      <option value="pixel">Píxel 🦝 (Feliz 😊)</option>
+    </select>
+    <span class="small muted">✦ Incluye nota automática: «Sin prisa por responder»</span>
+  </div>
+
+  <div class="here-grid" id="hereActions">
+    <button type="button" class="here-tile" data-gesture="hug">
+      <span class="tile-icon">🫂</span>
+      <b>Enviar un abrazo virtual</b>
+      <span class="small muted">Un apapacho cálido que ilumina su Ánima sin abrir un chat obligatorio.</span>
+    </button>
+    <button type="button" class="here-tile" data-gesture="voice">
+      <span class="tile-icon">🎙️</span>
+      <b>Nota de voz tranquila (Demo)</b>
+      <span class="small muted">«Hola, pasaba a recordarte que te quiero mucho. No hace falta que respondas hoy.»</span>
+    </button>
+    <button type="button" class="here-tile" data-gesture="memory">
+      <span class="tile-icon">📸</span>
+      <b>Compartir un recuerdo bonito</b>
+      <span class="small muted">Envía una postal de un momento compartido para traer calma.</span>
+    </button>
+    <button type="button" class="here-tile" data-gesture="quote">
+      <span class="tile-icon">💌</span>
+      <b>Enviar frase de apoyo</b>
+      <span class="small muted">«Un paso a la vez. Aquí estoy si me necesitas, y también si solo quieres silencio.»</span>
+    </button>
+    <button type="button" class="here-tile" data-gesture="choice">
+      <span class="tile-icon">🫧</span>
+      <b>¿Compañía o espacio?</b>
+      <span class="small muted">Pregunta respetuosa con botones de un toque para que elija sin esfuerzo.</span>
+    </button>
+    <button type="button" class="here-tile" data-gesture="moment">
+      <span class="tile-icon">🍵</span>
+      <b>Pequeño momento compartido</b>
+      <span class="small muted">«Me estoy tomando un té pensando en ti» o «Escuchando nuestra canción».</span>
+    </button>
+  </div>
+
+  <form class="here-composer" id="customHereForm">
+    <input id="customHereInput" maxlength="160" placeholder="O escribe un momento breve sin presión (ej. «Vi una nube con forma de conejo y me acordé de ti»)...">
+    <button type="submit" class="btn">Enviar sin presión ✦</button>
+  </form>
+
+  <div class="shared-moments-feed" id="sharedMomentsFeed" aria-live="polite"></div>
+</div>
+</div></section>
 
 <section class="section" id="comunidad"><div class="container"><div class="section-head"><span class="eyebrow">Comunidad</span><h2>No eres la única persona que lo siente.</h2><p>Un espacio de mensajes breves y moderados, sin competencia por atención ni métricas públicas. Estas tarjetas son ejemplos ilustrativos, no publicaciones reales.</p></div>
 <div class="community-grid"><article class="community-post"><span class="post-emoji">🌱</span><p>Hoy me costó empezar, pero hice una cosa pequeña por mí. Y eso cuenta.</p><small>Ánima anónima · Ejemplo</small></article><article class="community-post"><span class="post-emoji">🌧️</span><p>No necesito que me solucionen todo. A veces solo quiero que alguien me escuche.</p><small>Ánima anónima · Ejemplo</small></article><article class="community-post"><span class="post-emoji">✨</span><p>Le escribí a una amistad después de mucho tiempo. Me alegra haberlo intentado.</p><small>Ánima anónima · Ejemplo</small></article></div>
 <p class="muted small" style="margin-top:15px">Para operar de verdad, esta comunidad necesitaría moderación humana, reglas claras, herramientas de denuncia y protocolos de protección antes de abrirse al público.</p></div></section>
 
 <section class="section alt" id="acompanamiento"><div class="container"><div class="section-head"><span class="eyebrow">Acompañamiento inicial</span><h2>Un lugar para ordenar lo que traes dentro.</h2><p>Prueba una conversación guiada con tu Ánima. Puedes empezar eligiendo un emoji que se acerque a cómo te sientes. Este prototipo usa respuestas predefinidas: no es una IA conectada, no interpreta riesgos clínicos y no sustituye a una persona profesional.</p></div>
-<div class="chatbox"><div class="chat-head"><div class="face" id="chatAnimal">🦊</div><div><b id="chatName">Tu Ánima · Zorro</b><small>Compañía de demostración</small></div></div><div class="chat-log" id="chatLog" aria-live="polite"><div class="bubble">Hola. Podemos ir con calma. ¿Qué emoción te acompaña hoy?</div></div><div class="emotion-chips" id="emotionChips"><button class="emotion-chip" data-emotion="😊 Me siento feliz">😊 Feliz</button><button class="emotion-chip" data-emotion="😌 Estoy en calma">😌 En calma</button><button class="emotion-chip" data-emotion="😔 Me siento triste">😔 Triste</button><button class="emotion-chip" data-emotion="😰 Me siento ansioso/a">😰 Ansioso/a</button><button class="emotion-chip" data-emotion="😡 Estoy frustrado/a">😡 Frustrado/a</button><button class="emotion-chip" data-emotion="🥺 Me siento vulnerable">🥺 Vulnerable</button><button class="emotion-chip" data-emotion="😶 No sé qué siento">😶 No lo sé</button></div><form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="300" placeholder="Escribe lo que quieras compartir…" aria-label="Escribe un mensaje"><button class="btn" type="submit">Enviar</button></form><div class="chat-disclaimer">Evita escribir datos personales. Esta conversación de demostración solo se muestra en esta página y se pierde al recargarla.</div></div></div></section>
+<div class="chatbox"><div class="chat-head"><div class="face" id="chatAnimal"></div><div><b id="chatName">Tu Ánima · Chispa</b><small>Compañía de demostración</small></div></div><div class="chat-log" id="chatLog" aria-live="polite"><div class="bubble">Hola. Podemos ir con calma. ¿Qué emoción te acompaña hoy?</div></div><div class="emotion-chips" id="emotionChips"><button class="emotion-chip" data-emotion="😊 Me siento feliz">😊 Feliz</button><button class="emotion-chip" data-emotion="😌 Estoy en calma">😌 En calma</button><button class="emotion-chip" data-emotion="😔 Me siento triste">😔 Triste</button><button class="emotion-chip" data-emotion="😰 Me siento ansioso/a">😰 Ansioso/a</button><button class="emotion-chip" data-emotion="😡 Estoy frustrado/a">😡 Frustrado/a</button><button class="emotion-chip" data-emotion="🥺 Me siento vulnerable">🥺 Vulnerable</button><button class="emotion-chip" data-emotion="😶 No sé qué siento">😶 No lo sé</button></div><form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="300" placeholder="Escribe lo que quieras compartir…" aria-label="Escribe un mensaje"><button class="btn" type="submit">Enviar</button></form><div class="chat-disclaimer">Evita escribir datos personales. Esta conversación de demostración solo se muestra en esta página y se pierde al recargarla.</div></div></div></section>
 
 <section class="section" id="kids"><div class="container"><div class="section-head"><span class="eyebrow">KAIROS Kids · 8 a 11 años</span><h2>Un bosque donde el clima también siente.</h2><p>Una experiencia indirecta y lúdica para que niñas y niños puedan expresar su día con palabras sencillas, colores y naturaleza.</p></div>
-<div class="grid3"><div class="kids-stage" id="kidsStage"><div class="kids-sun"></div><div class="kids-fx" id="kidsFx" aria-hidden="true"></div><div class="kids-tree">🌳</div><div class="kids-character" id="kidsCharacter">🐰<span class="gear" id="kidsGear"></span></div><div class="kids-prompt" id="kidsPrompt">¡Hola! Soy Nube. ¿Qué clima tiene tu bosque hoy?</div></div><div class="card" style="grid-column:span 2"><h3>Elige el clima de tu bosque</h3><p class="muted small">Tu clima nos ayuda a encontrar palabras para contar cómo va tu día. ¡Todos los climas están bien!</p><div class="kids-choices" id="kidsChoices"><button data-kid="sun" aria-pressed="false">☀️ Soleado</button><button data-kid="cloud" aria-pressed="false">☁️ Nublado</button><button data-kid="rain" aria-pressed="false">🌧️ Lluvioso</button><button data-kid="storm" aria-pressed="false">⛈️ Con tormenta</button><button data-kid="rainbow" aria-pressed="false">🌈 Con arcoíris</button><button data-kid="night" aria-pressed="false">🌙 Estrellado</button></div><div class="kids-result" id="kidsResult" aria-live="polite"></div><div class="kids-chat"><b style="color:#315c66">💬 Platica con Nube</b><div class="kids-chat-log" id="kidsChatLog" aria-live="polite"><div class="kids-bubble">¡Hola! Cuéntame de tu día o toca un clima. Si escribes “hoy llueve” o “estoy feliz”, tu bosque cambia. 🌿</div></div><div class="kids-quick" id="kidsQuick" role="group" aria-label="Clima del bosque"><button type="button" data-kid="sun" aria-pressed="false" aria-label="Soleado">☀️</button><button type="button" data-kid="cloud" aria-pressed="false" aria-label="Nublado">☁️</button><button type="button" data-kid="rain" aria-pressed="false" aria-label="Lluvioso">🌧️</button><button type="button" data-kid="storm" aria-pressed="false" aria-label="Con tormenta">⛈️</button><button type="button" data-kid="rainbow" aria-pressed="false" aria-label="Con arcoíris">🌈</button><button type="button" data-kid="night" aria-pressed="false" aria-label="Estrellado">🌙</button><button type="button" class="breathe" id="kidsBreathe">🌬️ Respirar con Nube</button></div><form class="kids-chat-controls" id="kidsChatForm"><input id="kidsChatInput" maxlength="140" placeholder="Hoy en mi bosque…" aria-label="Mensaje para Nube"><button type="submit">Enviar</button></form></div><p class="muted small" style="margin-top:13px">En el producto final, esta experiencia sería privada y compartida únicamente con las personas cuidadoras autorizadas. Sin chat abierto, desconocidos ni muro público.</p></div></div></div></section>
+<div class="grid3"><div class="kids-stage" id="kidsStage"><div class="kids-sun"></div><div class="kids-fx" id="kidsFx" aria-hidden="true"></div><div class="kids-tree">🌳</div><div class="kids-character" id="kidsCharacter">🐰<span class="gear" id="kidsGear"></span></div><div class="kids-prompt" id="kidsPrompt">¡Hola! Soy Nubi. ¿Qué clima tiene tu bosque hoy?</div></div><div class="card" style="grid-column:span 2"><h3>Elige el clima de tu bosque</h3><p class="muted small">Tu clima nos ayuda a encontrar palabras para contar cómo va tu día. ¡Todos los climas están bien!</p><div class="kids-choices" id="kidsChoices"><button data-kid="sun" aria-pressed="false">☀️ Soleado</button><button data-kid="cloud" aria-pressed="false">☁️ Nublado</button><button data-kid="rain" aria-pressed="false">🌧️ Lluvioso</button><button data-kid="storm" aria-pressed="false">⛈️ Con tormenta</button><button data-kid="rainbow" aria-pressed="false">🌈 Con arcoíris</button><button data-kid="night" aria-pressed="false">🌙 Estrellado</button></div><div class="kids-result" id="kidsResult" aria-live="polite"></div><div class="kids-chat"><b style="color:#315c66">💬 Platica con Nubi</b><div class="kids-chat-log" id="kidsChatLog" aria-live="polite"><div class="kids-bubble">¡Hola! Cuéntame de tu día o toca un clima. Si escribes “hoy llueve” o “estoy feliz”, tu bosque cambia. 🌿</div></div><div class="kids-quick" id="kidsQuick" role="group" aria-label="Clima del bosque"><button type="button" data-kid="sun" aria-pressed="false" aria-label="Soleado">☀️</button><button type="button" data-kid="cloud" aria-pressed="false" aria-label="Nublado">☁️</button><button type="button" data-kid="rain" aria-pressed="false" aria-label="Lluvioso">🌧️</button><button type="button" data-kid="storm" aria-pressed="false" aria-label="Con tormenta">⛈️</button><button type="button" data-kid="rainbow" aria-pressed="false" aria-label="Con arcoíris">🌈</button><button type="button" data-kid="night" aria-pressed="false" aria-label="Estrellado">🌙</button><button type="button" class="breathe" id="kidsBreathe">🌬️ Respirar con Nubi</button></div><form class="kids-chat-controls" id="kidsChatForm"><input id="kidsChatInput" maxlength="140" placeholder="Hoy en mi bosque…" aria-label="Mensaje para Nubi"><button type="submit">Enviar</button></form></div><p class="muted small" style="margin-top:13px">En el producto final, esta experiencia sería privada y compartida únicamente con las personas cuidadoras autorizadas. Sin chat abierto, desconocidos ni muro público.</p></div></div></div></section>
 
 <section class="section alt" id="familias"><div class="container"><div class="section-head"><span class="eyebrow">Para familias y personas cuidadoras</span><h2>Escuchar también es cuidar.</h2><p>KAIROS busca acercar información clara y herramientas sencillas para reconocer cambios, abrir conversaciones y pedir orientación sin juzgar.</p></div>
 <div class="care-grid"><article class="card"><div class="card-icon">👂</div><h3>Preguntar sin interrogar</h3><p class="muted">“Te he notado diferente últimamente. ¿Cómo te has sentido? Si quieres hablar, estoy aquí.”</p></article><article class="card"><div class="card-icon">🧭</div><h3>Observar y acompañar</h3><p class="muted">Tomar en serio los cambios persistentes, escuchar con calma y buscar orientación profesional cuando sea necesario.</p></article></div></div></section>
@@ -219,22 +580,665 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <section class="section" id="ayuda"><div class="container"><div class="help-panel"><span class="eyebrow" style="color:#9b3650">Si necesitas apoyo ahora</span><h2>No tienes que atravesar este momento a solas.</h2><p>Si sientes que podrías hacerte daño o estás en peligro inmediato, busca a una persona de confianza que pueda estar contigo y solicita ayuda urgente.</p><div class="help-links"><a href="tel:911">Llamar a emergencias · 911</a><a href="tel:8009112000">Línea de la Vida · 800 911 2000</a></div><p class="help-note">Si no puedes llamar, acércate a urgencias o pide a alguien cercano que te acompañe. Los recursos y horarios deben verificarse antes del lanzamiento público. KAIROS no es un servicio de emergencia ni garantiza atención 24/7.</p></div></div></section>
 </main>
 
-<footer class="footer"><div class="container footer-inner"><div><a class="brand" href="#inicio" style="color:#fff"><span class="brand-mark">✧</span>KAIROS</a><p style="margin:12px 0 0;color:#d9d2f4">El momento oportuno para estar presente.</p></div><div class="disclaimer"><b>Un proyecto de acompañamiento emocional.</b><p style="margin:8px 0">La tecnología puede facilitar la conexión, pero no reemplaza la atención psicológica, médica ni de emergencia. La privacidad, la seguridad de menores y la moderación humana son requisitos esenciales para una versión real.</p><a href="#inicio">Volver al inicio ↑</a></div></div></footer>
+<!-- Modal de perfil del amigo en Mi círculo -->
+<div class="modal-backdrop" id="friendModal" role="dialog" aria-modal="true" aria-labelledby="modalFriendName">
+  <div class="modal-card">
+    <button type="button" class="modal-close" id="closeModalBtn" aria-label="Cerrar perfil">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<footer class="footer"><div class="container footer-inner"><div><a class="brand" href="#inicio" style="color:#fff"><span class="brand-mark">✧</span>KAIROS</a><p style="margin:12px 0 0;color:#d9d2f4">El momento oportuno para estar presente.</p></div><div class="disclaimer"><b>Un proyecto de acompañamiento emocional.</b><p style="margin:8px 0">«No se trata de vigilar a quienes queremos, sino de hacerles saber que estamos aquí». La tecnología puede facilitar la conexión, pero no reemplaza la atención psicológica, médica ni de emergencia. La privacidad, la seguridad de menores y la moderación humana son requisitos esenciales para una versión real.</p><a href="#inicio">Volver al inicio ↑</a></div></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 <script>
 const $=s=>document.querySelector(s);
-const revealObserver=("IntersectionObserver" in window)?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.12}):null;
-document.querySelectorAll(".card,.form-card,.profile-card,.community-post,.kids-stage,.help-panel").forEach(el=>{el.classList.add("reveal");if(revealObserver)revealObserver.observe(el);else el.classList.add("visible")});
+const revealObserver=("IntersectionObserver" in window)?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.1}):null;
+document.querySelectorAll(".card,.form-card,.profile-card,.community-post,.kids-stage,.help-panel,.anima-sanctuary,.map-detail-card,.privacy-panel,.here-wrap").forEach(el=>{el.classList.add("reveal");if(revealObserver)revealObserver.observe(el);else el.classList.add("visible")});
 const toast=(msg)=>{const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>t.classList.remove("show"),2800)};
+
 $("#menuBtn").addEventListener("click",()=>{const n=$("#navlinks"),open=n.classList.toggle("open");$("#menuBtn").setAttribute("aria-expanded",String(open));$("#menuBtn").textContent=open?"×":"☰"});
 document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=>{$("#navlinks").classList.remove("open");$("#menuBtn").setAttribute("aria-expanded","false");$("#menuBtn").textContent="☰"}));
 $("#themeBtn").addEventListener("click",()=>{const dark=document.documentElement.dataset.theme!=="dark";document.documentElement.dataset.theme=dark?"dark":"light";toast(dark?"Tema oscuro activado":"Tema claro activado")});
-let animal={emoji:"🦊",name:"Zorro",desc:"Directo, atento y protector"};
-document.querySelectorAll(".anima-option").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".anima-option").forEach(b=>b.setAttribute("aria-pressed","false"));btn.setAttribute("aria-pressed","true");animal={emoji:btn.dataset.animal,name:btn.dataset.name,desc:btn.dataset.desc};$("#heroAnimal").textContent=animal.emoji;$("#profileAnimal").textContent=animal.emoji;$("#profileName").textContent=animal.name;$("#profileDesc").textContent=animal.desc;$("#chatAnimal").textContent=animal.emoji;$("#chatName").textContent="Tu Ánima · "+animal.name;toast("Tu Ánima ahora es "+animal.name)}));
+
+/* ===== REDUCCIÓN DE MOVIMIENTO ===== */
+let manualReduce=false;
+$("#motionBtn").addEventListener("click",()=>{
+  manualReduce=!manualReduce;
+  document.documentElement.classList.toggle("reduce-motion",manualReduce);
+  $("#motionBtn").setAttribute("aria-pressed",String(manualReduce));
+  toast(manualReduce?"Movimiento reducido activado":"Animaciones suaves activadas");
+});
+
+/* ===== 2. ILUSTRACIONES SVG DE LAS ÁNIMAS (TIERNAS, EXPRESIVAS Y MÁGICAS) ===== */
+const ANIMAS={
+  chispa:{
+    key:"chispa",name:"Chispa",emoji:"🦊",species:"Zorrito estelar",
+    desc:"Curioso, protector y directo",
+    petReplies:["*Mueve su colita esponjosa* ¡Ey! Gracias por esa caricia, me recarga el corazón.","Me gusta estar cerquita. Si algo te pesa hoy, lo miramos juntos sin rodeos.","*Ronroneo de zorrito* Qué bien se siente acompañarte así."],
+    hugReplies:["*Te envuelve con su cola tibia* Aquí estoy. Nadie te apura hoy.","Abrazo recibido. Recuerda que no tienes que cargar todo tú solo/a.","*Se acurruca fuerte* Cuenta conmigo en los días claros y en los nublados."],
+    playReplies:["*Da un saltito y suelta chispitas menta* ¡Mira! Una estrella fugaz solo para ti.","*Persigue una luz flotante* ¡Atrapada! Te la guardo en el bolsillo.","*Inclina las orejitas* ¿Hacemos una pausa de diez segundos para estirar los hombros?"]
+  },
+  momo:{
+    key:"momo",name:"Momo",emoji:"🐻",species:"Osito de nube",
+    desc:"Tranquilo, paciente y cálido",
+    petReplies:["*Suspira despacito* Qué suave... tómate todo el tiempo que necesites hoy.","Aquí no hay prisa. Podemos quedarnos respirando tan lento como quieras.","*Se inclina hacia tu mano* Me da mucha paz estar a tu lado."],
+    hugReplies:["*Te da un abrazo grande y tibio de oso* Respira hondo, estás a salvo aquí.","Un abrazo largo, sin relojes ni pendientes. Quédate aquí un ratito.","*Te arropa con calidez* Todo se vuelve más llevadero cuando se comparte."],
+    playReplies:["*Rueda suavemente como una almohada* ¡Plop! A veces descansar también es jugar.","*Saca una tacita imaginaria de miel tibia* Brindemos por haber llegado hasta aquí hoy.","*Mueve sus orejitas redondas* ¿Notaste lo suave que está la luz ahora?"]
+  },
+  nubi:{
+    key:"nubi",name:"Nubi",emoji:"🐰",species:"Conejito lunar",
+    desc:"Dulce, sensible y soñador",
+    petReplies:["*Mueve su naricita rosada* Gracias por tratarme con tanta ternura...","Sentir mucho no es un defecto, es señal de que tu corazón está vivo.","*Baja sus orejitas suaves* Me encanta cuando compartimos este silencio bonito."],
+    hugReplies:["*Apoya su cabecita en ti* Si hoy te sientes sensible, yo te cuido el espacio.","*Te abraza con sus patitas suaves* No tienes que esconder ninguna lágrima aquí.","Estamos juntos en esta nubecita. Todo a tu ritmo."],
+    playReplies:["*Da un brinquito flotante en el aire* ¡Boing! Mira cuántas burbujas de luz.","*Dibuja una constelación con su orejita* Se parece a un corazón tranquilo.","*Salta de alegría suave* ¡Qué bonito momento acabamos de crear!"]
+  },
+  pixel:{
+    key:"pixel",name:"Píxel",emoji:"🦝",species:"Mapache cósmico",
+    desc:"Divertido, leal y espontáneo",
+    petReplies:["*Se tapa los ojitos de emoción* ¡Oye, eso da cosquillas en los bigotes!","Pase lo que pase hoy, yo sigo en tu equipo. ¡Lealtad total!","*Mueve su colita anillada* Eres mi persona favorita para pasar el rato."],
+    hugReplies:["*Te abraza con todas sus patitas* ¡Choca esos cinco... y luego otro abrazo!","Aquí estoy, firme como un mapache guardián de buenas compañías.","*Te da palmaditas suaves* No hace falta tener todo resuelto para merecer cariño."],
+    playReplies:["*Hace malabares con tres estrellitas* ¡Ta-dá! ¿Te saqué al menos media sonrisa?","*Da una voltereta en el aire* ¡Nivel desbloqueado: sobrevivir a un día más!","*Te guiña un ojo* Te regalo un tesoro brillante que encontré entre las nubes."]
+  },
+  lumi:{
+    key:"lumi",name:"Lumi",emoji:"🦉",species:"Lechuza aurora",
+    desc:"Observadora y comprensiva",
+    petReplies:["*Parpadea con dulzura* Te escucho incluso cuando no encuentras las palabras.","*Esponja sus plumitas* Qué valioso es darte un respiro en medio del ruido.","Observo cuánto te esfuerzas; recuerda ser amable contigo también."],
+    hugReplies:["*Extiende sus alitas suaves alrededor de ti* Aquí puedes bajar la guardia.","*Te cubre con sus alas luminosas* No hay nada que demostrar en este rincón.","Un abrazo sereno para ordenar lo que pesa por dentro."],
+    playReplies:["*Gira la cabecita con curiosidad* ¡Uuh! Mira cómo brillan las luciérnagas cuando sonríes.","*Flota en círculos suaves* A veces cambiar de perspectiva empieza por mirar hacia arriba.","*Suena como campanita de cristal* Pequeña pausa mágica completada."]
+  },
+  copito:{
+    key:"copito",name:"Copito",emoji:"🐻‍❄️",species:"Osito polar cristal",
+    desc:"Sereno y reconfortante",
+    petReplies:["*Cierra sus ojitos con paz* Mi pelaje es fresquito, pero mi compañía es muy cálida.","Quédate tan quieto/a como quieras; yo cuido la calma alrededor.","*Inclina la cabeza con ternura* Gracias por venir a saludarme."],
+    hugReplies:["*Te envuelve como una manta suave de nieve luminosa* Respira, ya pasó lo más difícil.","*Te sostiene con serenidad* Incluso en el invierno más largo hay luz suave.","Aquí estoy, firme y tranquilo para ti."],
+    playReplies:["*Sopla un copo brillante que flota despacio* Míralo caer sin prisa...","*Se desliza suavemente* ¡Wii! Un poquito de ligereza para el corazón.","*Hace brillar su aura menta* Te mando aire limpio y tranquilo."]
+  }
+};
+
+function renderAnimaSVG(key, mood="calm", aura="#a98bff", acc="none"){
+  const uid=key+"-"+Math.random().toString(36).slice(2,7);
+  // Expresiones faciales según estado emocional
+  const isSad = (mood==="sad" || mood==="vulnerable" || mood==="overwhelmed");
+  const isHappy = (mood==="happy");
+  const browL = isSad ? `M34,43 Q40,40 44,44` : isHappy ? `M34,39 Q39,36 44,39` : `M34,41 Q39,39 44,41`;
+  const browR = isSad ? `M56,44 Q60,40 66,43` : isHappy ? `M56,39 Q61,36 66,39` : `M56,41 Q61,39 66,41`;
+  const mouth = isHappy
+    ? `<path d="M44,58 Q50,65 56,58" fill="none" stroke="#362863" stroke-width="2.6" stroke-linecap="round"/>`
+    : (mood==="sad" || mood==="vulnerable")
+    ? `<path d="M45,61 Q50,57 55,61" fill="none" stroke="#362863" stroke-width="2.4" stroke-linecap="round"/>`
+    : mood==="overwhelmed"
+    ? `<ellipse cx="50" cy="60" rx="4" ry="3.2" fill="#362863"/>`
+    : `<path d="M45,58 Q50,62 55,58" fill="none" stroke="#362863" stroke-width="2.4" stroke-linecap="round"/>`;
+  const tear = (mood==="sad" || mood==="vulnerable")
+    ? `<path d="M35,54 Q33,59 35,61 Q37,59 35,54 Z" fill="#86d4ff"/>` : "";
+
+  // Accesorios personalizables
+  const accSVG = acc==="star"
+    ? `<polygon points="50,11 52.5,17 59,17.5 54,21.8 55.5,28 50,24.6 44.5,28 46,21.8 41,17.5 47.5,17" fill="#ffe074" stroke="#fff" stroke-width="1.2"/>`
+    : acc==="scarf"
+    ? `<path d="M31,73 Q50,80 69,73 L66,80 Q50,86 34,80 Z" fill="#86d4ff"/><path d="M56,77 L61,89 L53,88 Z" fill="#98ecd4"/>`
+    : acc==="flower"
+    ? `<g transform="translate(66,26)"><circle cx="0" cy="-4" r="3.5" fill="#ffb8d9"/><circle cx="4" cy="0" r="3.5" fill="#ffb8d9"/><circle cx="0" cy="4" r="3.5" fill="#ffb8d9"/><circle cx="-4" cy="0" r="3.5" fill="#ffb8d9"/><circle cx="0" cy="0" r="2.6" fill="#ffe680"/></g>`
+    : "";
+
+  let speciesParts="";
+  if(key==="chispa"){
+    speciesParts=`
+      <g class="anima-ear-l"><polygon points="24,38 22,12 43,27" fill="#ff9666"/><polygon points="27,34 26,18 39,27" fill="#ffe7d6"/></g>
+      <g class="anima-ear-r"><polygon points="76,38 78,12 57,27" fill="#ff9666"/><polygon points="73,34 74,18 61,27" fill="#ffe7d6"/></g>
+      <ellipse cx="50" cy="56" rx="30" ry="27" fill="url(#g-${uid})"/>
+      <path d="M22,55 Q34,49 50,57 Q66,49 78,55 Q74,78 50,81 Q26,78 22,55 Z" fill="#fff8f2"/>
+      <ellipse cx="50" cy="55" rx="3.4" ry="2.4" fill="#362863"/>`;
+  }else if(key==="momo"){
+    speciesParts=`
+      <g class="anima-ear-l"><circle cx="29" cy="27" r="10" fill="#a87c65"/><circle cx="29" cy="27" r="5.5" fill="#e8cbb8"/></g>
+      <g class="anima-ear-r"><circle cx="71" cy="27" r="10" fill="#a87c65"/><circle cx="71" cy="27" r="5.5" fill="#e8cbb8"/></g>
+      <ellipse cx="50" cy="56" rx="31" ry="28" fill="url(#g-${uid})"/>
+      <ellipse cx="50" cy="60" rx="13" ry="10" fill="#f7e6da"/>
+      <ellipse cx="50" cy="56" rx="3.8" ry="2.6" fill="#362863"/>`;
+  }else if(key==="nubi"){
+    speciesParts=`
+      <g class="anima-ear-l"><rect x="31" y="6" width="12" height="31" rx="6" fill="#ffffff" stroke="#e4dcff" stroke-width="1.5"/><rect x="34" y="10" width="6" height="22" rx="3" fill="#ffd4e6"/></g>
+      <g class="anima-ear-r"><rect x="57" y="6" width="12" height="31" rx="6" fill="#ffffff" stroke="#e4dcff" stroke-width="1.5"/><rect x="60" y="10" width="6" height="22" rx="3" fill="#ffd4e6"/></g>
+      <ellipse cx="50" cy="57" rx="29" ry="26" fill="url(#g-${uid})" stroke="#e8e1ff" stroke-width="1.5"/>
+      <circle cx="50" cy="56" r="2.7" fill="#ff9ec4"/>`;
+  }else if(key==="pixel"){
+    speciesParts=`
+      <g class="anima-ear-l"><polygon points="24,38 24,15 43,27" fill="#7c759e"/><polygon points="28,34 28,20 39,27" fill="#dcd7f2"/></g>
+      <g class="anima-ear-r"><polygon points="76,38 76,15 57,27" fill="#7c759e"/><polygon points="72,34 72,20 61,27" fill="#dcd7f2"/></g>
+      <ellipse cx="50" cy="56" rx="30" ry="27" fill="url(#g-${uid})"/>
+      <ellipse cx="38" cy="49" rx="11" ry="8" fill="#463e6e" opacity=".88"/>
+      <ellipse cx="62" cy="49" rx="11" ry="8" fill="#463e6e" opacity=".88"/>
+      <ellipse cx="50" cy="60" rx="12" ry="9" fill="#f4f2ff"/>
+      <ellipse cx="50" cy="56" rx="3.4" ry="2.4" fill="#2c2352"/>`;
+  }else if(key==="lumi"){
+    speciesParts=`
+      <g class="anima-ear-l"><polygon points="27,31 24,16 39,25" fill="#9c84e8"/></g>
+      <g class="anima-ear-r"><polygon points="73,31 76,16 61,25" fill="#9c84e8"/></g>
+      <ellipse cx="50" cy="56" rx="30" ry="28" fill="url(#g-${uid})"/>
+      <circle cx="39" cy="49" r="12" fill="#fff9f0"/>
+      <circle cx="61" cy="49" r="12" fill="#fff9f0"/>
+      <polygon points="47,55 53,55 50,61" fill="#ffbe66"/>`;
+  }else{
+    speciesParts=`
+      <g class="anima-ear-l"><circle cx="29" cy="28" r="9.5" fill="#eef8ff" stroke="#d5ebff" stroke-width="1.5"/><circle cx="29" cy="28" r="5" fill="#cbe8ff"/></g>
+      <g class="anima-ear-r"><circle cx="71" cy="28" r="9.5" fill="#eef8ff" stroke="#d5ebff" stroke-width="1.5"/><circle cx="71" cy="28" r="5" fill="#cbe8ff"/></g>
+      <ellipse cx="50" cy="56" rx="31" ry="28" fill="url(#g-${uid})" stroke="#dff0ff" stroke-width="1.5"/>
+      <ellipse cx="50" cy="60" rx="12" ry="9.5" fill="#ffffff"/>
+      <ellipse cx="50" cy="56" rx="3.6" ry="2.5" fill="#35476e"/>`;
+  }
+
+  const gradColors={
+    chispa:["#ffb37e","#ff8659"],
+    momo:["#c79a82","#9e725c"],
+    nubi:["#ffffff","#f1ecff"],
+    pixel:["#b4add6","#8c83b5"],
+    lumi:["#b9a5f7","#876fd6"],
+    copito:["#ffffff","#e1f4ff"]
+  }[key]||["#c7b8ff","#86d4ff"];
+
+  return `<svg class="anima-svg" viewBox="0 0 100 96" aria-hidden="true">
+    <defs>
+      <radialGradient id="g-${uid}" cx="38%" cy="30%" r="70%">
+        <stop offset="0%" stop-color="${gradColors[0]}"/>
+        <stop offset="100%" stop-color="${gradColors[1]}"/>
+      </radialGradient>
+    </defs>
+    <circle class="anima-aura" cx="50" cy="54" r="42" fill="${aura}" opacity=".35"/>
+    <g class="anima-body">
+      ${speciesParts}
+      <path d="${browL}" fill="none" stroke="#362863" stroke-width="2" stroke-linecap="round"/>
+      <path d="${browR}" fill="none" stroke="#362863" stroke-width="2" stroke-linecap="round"/>
+      <g class="anima-eyes">
+        <circle cx="39" cy="49" r="5.2" fill="#281d52"/>
+        <circle cx="61" cy="49" r="5.2" fill="#281d52"/>
+        <circle cx="37.4" cy="47.2" r="2" fill="#ffffff"/>
+        <circle cx="59.4" cy="47.2" r="2" fill="#ffffff"/>
+        <circle cx="40.6" cy="50.4" r=".9" fill="#ffffff"/>
+        <circle cx="62.6" cy="50.4" r=".9" fill="#ffffff"/>
+      </g>
+      <ellipse cx="29" cy="56" rx="4.5" ry="2.6" fill="#ff9ec4" opacity=".55"/>
+      <ellipse cx="71" cy="56" rx="4.5" ry="2.6" fill="#ff9ec4" opacity=".55"/>
+      ${tear}
+      ${mouth}
+      ${accSVG}
+      <circle cx="20" cy="24" r="1.8" fill="#fff"/>
+      <circle cx="81" cy="28" r="1.5" fill="#c9fff0"/>
+    </g>
+  </svg>`;
+}
+
+/* ===== ESTADO DEL ÁNIMA DEL USUARIO Y PERSONALIZACIÓN ===== */
+let currentAnimaKey="chispa";
+let currentAnimaMood="calm";
+let currentAura="#a98bff";
+let currentAcc="none";
+let currentEnv="nube";
+
+function refreshAllUserAnima(){
+  const a=ANIMAS[currentAnimaKey];
+  $("#heroAnimal").innerHTML=renderAnimaSVG(a.key,currentAnimaMood,currentAura,currentAcc);
+  $("#profileAnimal").innerHTML=renderAnimaSVG(a.key,currentAnimaMood,currentAura,currentAcc);
+  $("#profileName").textContent=a.name+" "+a.emoji;
+  $("#profileDesc").textContent=a.species+" · "+a.desc;
+  $("#sanctuaryTitleName").textContent=a.name;
+  $("#sanctuaryPet").innerHTML=renderAnimaSVG(a.key,currentAnimaMood,currentAura,currentAcc);
+  $("#chatAnimal").innerHTML=renderAnimaSVG(a.key,currentAnimaMood,currentAura,currentAcc);
+  $("#chatName").textContent="Tu Ánima · "+a.name;
+}
+
+// Pintar miniaturas en la cuadrícula de selección
+document.querySelectorAll("[data-render]").forEach(el=>{
+  el.innerHTML=renderAnimaSVG(el.dataset.render,"happy","#a98bff","none");
+});
+refreshAllUserAnima();
+
+document.querySelectorAll(".anima-option").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".anima-option").forEach(b=>b.setAttribute("aria-pressed","false"));
+  btn.setAttribute("aria-pressed","true");
+  currentAnimaKey=btn.dataset.key;
+  refreshAllUserAnima();
+  const a=ANIMAS[currentAnimaKey];
+  $("#sanctuarySpeech").textContent=`¡Hola! Soy ${a.name}. ${a.petReplies[1]}`;
+  toast("Tu Ánima ahora es "+a.name+" "+a.emoji);
+}));
+
+/* ===== 3. INTERACCIONES CON EL ÁNIMA (ACARICIAR, ABRAZAR, JUGAR, PERSONALIZAR) ===== */
+function triggerSanctuaryReaction(type){
+  const a=ANIMAS[currentAnimaKey];
+  const wrap=$("#sanctuaryPet");
+  wrap.classList.remove("anima-react-pet","anima-react-hug","anima-react-play");
+  void wrap.offsetWidth;
+  wrap.classList.add("anima-react-"+type);
+
+  const list = type==="pet" ? a.petReplies : type==="hug" ? a.hugReplies : a.playReplies;
+  const line = list[Math.floor(Math.random()*list.length)];
+  $("#sanctuarySpeech").textContent=line;
+  $("#sanctuaryMoodLabel").textContent = type==="pet" ? "Recibiendo cariño 🤍" : type==="hug" ? "En un abrazo cálido 🫂" : "Jugando contigo ✨";
+  burst(wrap, type==="pet"?"🤍":type==="hug"?"🫂":"✨", 9);
+}
+
+$("#btnPet").addEventListener("click",()=>triggerSanctuaryReaction("pet"));
+$("#btnHug").addEventListener("click",()=>triggerSanctuaryReaction("hug"));
+$("#btnPlay").addEventListener("click",()=>triggerSanctuaryReaction("play"));
+$("#sanctuaryPet").addEventListener("click",()=>triggerSanctuaryReaction("pet"));
+$("#sanctuaryPet").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();triggerSanctuaryReaction("pet")}});
+
+// Personalización del espacio y accesorios
+document.querySelectorAll("#auraPicker .swatch").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#auraPicker .swatch").forEach(x=>x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");
+  currentAura=b.dataset.aura;
+  refreshAllUserAnima();
+  toast("Brillo del Ánima actualizado");
+}));
+document.querySelectorAll("#accPicker .chip-mini").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#accPicker .chip-mini").forEach(x=>x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");
+  currentAcc=b.dataset.acc;
+  refreshAllUserAnima();
+  toast("Accesorio actualizado");
+}));
+const ENV_DECORS={
+  nube:{top:["☁️","✨"],bot:["🪴","🕯️"]},
+  bosque:{top:["🍃","🦋"],bot:["🍄","🌿"]},
+  estrellas:{top:["🌙","⭐"],bot:["🔭","✨"]},
+  aurora:{top:["🌈","💫"],bot:["crystal","🌸"]}
+};
+document.querySelectorAll("#envPicker .chip-mini").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#envPicker .chip-mini").forEach(x=>x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");
+  currentEnv=b.dataset.env;
+  const st=$("#sanctuaryStage");
+  st.className="sanctuary-stage env-"+currentEnv;
+  const d=ENV_DECORS[currentEnv];
+  $("#decorTopL").textContent=d.top[0];$("#decorTopR").textContent=d.top[1];
+  $("#decorBotL").textContent=d.bot[0]==="crystal"?"🔮":d.bot[0];$("#decorBotR").textContent=d.bot[1];
+  toast("Rincón cambiado a "+currentEnv);
+}));
+
+/* ===== ESTADO EMOCIONAL DEL USUARIO ===== */
 let selectedMood=null;
-document.querySelectorAll(".mood").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".mood").forEach(b=>b.setAttribute("aria-pressed","false"));btn.setAttribute("aria-pressed","true");selectedMood={name:btn.dataset.mood,emoji:btn.dataset.emoji}}));
-$("#saveMood").addEventListener("click",()=>{if(!selectedMood){$("#moodStatus").textContent="Primero elige cómo te sientes.";return}const note=$("#moodNote").value.trim();$("#previewTitle").textContent=selectedMood.emoji+" Hoy me siento "+selectedMood.name.toLowerCase();$("#previewNote").textContent=note? "“"+note+"”": "No agregaste una nota.";$("#moodPreview").classList.add("show");const share=$("#shareCircle").checked;$("#moodStatus").textContent=share?"Vista previa creada. En esta demo no se envía a nadie.":"Tu estado quedó solo en esta vista previa local.";toast("Vista previa lista")});
-$("#clearMood").addEventListener("click",()=>{selectedMood=null;$("#moodNote").value="";$("#shareCircle").checked=false;$("#moodPreview").classList.remove("show");$("#moodStatus").textContent="";document.querySelectorAll(".mood").forEach(b=>b.setAttribute("aria-pressed","false"))});
+document.querySelectorAll(".mood").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".mood").forEach(b=>b.setAttribute("aria-pressed","false"));
+  btn.setAttribute("aria-pressed","true");
+  selectedMood={name:btn.dataset.mood,emoji:btn.dataset.emoji,state:btn.dataset.state};
+  currentAnimaMood=btn.dataset.state;
+  refreshAllUserAnima();
+}));
+
+$("#saveMood").addEventListener("click",()=>{
+  if(!selectedMood){$("#moodStatus").textContent="Primero elige cómo te sientes.";return}
+  const note=$("#moodNote").value.trim();
+  $("#previewTitle").textContent=selectedMood.emoji+" Hoy me siento "+selectedMood.name.toLowerCase();
+  $("#previewNote").textContent=note? "“"+note+"”": "Sin nota adicional.";
+  $("#moodPreview").classList.add("show");
+  const share=$("#shareCircle").checked;
+  if(share){
+    upsertUserCircleCard(selectedMood,note);
+    $("#moodStatus").textContent="Guardado y visible en tu vista previa de «Mi círculo» (solo local en esta demo).";
+  }else{
+    removeUserCircleCard();
+    $("#moodStatus").textContent="Tu estado quedó guardado solo para ti en este dispositivo.";
+  }
+  const a=ANIMAS[currentAnimaKey];
+  $("#sanctuarySpeech").textContent = (selectedMood.state==="sad"||selectedMood.state==="vulnerable"||selectedMood.state==="overwhelmed")
+    ? `Gracias por ser honesto/a hoy. Aquí sigo contigo, sin pedirte que cambies lo que sientes.`
+    : `Qué bonito acompañarte hoy, ${a.name} está feliz de verte así.`;
+  toast("Estado emocional actualizado");
+});
+
+$("#clearMood").addEventListener("click",()=>{
+  selectedMood=null;currentAnimaMood="calm";refreshAllUserAnima();
+  $("#moodNote").value="";$("#shareCircle").checked=false;$("#moodPreview").classList.remove("show");$("#moodStatus").textContent="";
+  document.querySelectorAll(".mood").forEach(b=>b.setAttribute("aria-pressed","false"));
+  removeUserCircleCard();
+});
+
+/* ===== 1. DATOS Y RENDER DE «MI CÍRCULO» + 4. DATOS DEL MAPA ===== */
+const CIRCLE_FRIENDS=[
+  {
+    id:"chispa",
+    userName:"Valeria · @chispa.luz",
+    animaKey:"chispa",
+    animaTitle:"Chispa 🦊",
+    moodLabel:"Vulnerable",
+    moodEmoji:"🥺",
+    moodState:"vulnerable",
+    category:"support",
+    badgeBg:"#ffeaf3",
+    badgeColor:"#8d2c59",
+    message:"Hoy traigo el corazón un poquito sensible y la cabeza con mil vueltas. No necesito consejos, solo saber que andan por aquí.",
+    updatedAgo:"Hace 18 min",
+    bio:"Chispa es un zorrito curioso y protector. Cuando Valeria tiene días sensibles, Chispa prefiere la compañía tranquila sin demasiadas preguntas.",
+    autoReply:"Gracias por estar ahí 🥺 leer eso me hizo sentir mucho menos sola hoy.",
+    map:{x:28,y:44,zone:"Zona Parque de los Venados · Radio aprox. 1 km",sharedStatus:"Compartida hace 18 min",isCurrent:true}
+  },
+  {
+    id:"momo",
+    userName:"Mateo · @momo.te",
+    animaKey:"momo",
+    animaTitle:"Momo 🐻",
+    moodLabel:"Tranquilo",
+    moodEmoji:"😌",
+    moodState:"calm",
+    category:"calm",
+    badgeBg:"#e2f8f1",
+    badgeColor:"#1e6654",
+    message:"Tarde de lluvia, musiquita suave y un té caliente. Si alguien necesita que lo escuchen hoy, tengo tiempo y calma.",
+    updatedAgo:"Hace 42 min",
+    bio:"Momo es un osito paciente y cálido que adora los momentos sin prisa y escuchar a sus amistades con atención.",
+    autoReply:"¡Qué lindo gesto! Aquí sigo con mi tecito por si quieres platicar o solo pasar el rato 😌.",
+    map:{x:66,y:34,zone:"Barrio del Carmen · Radio aprox. 1 km",sharedStatus:"Actualizada hace 42 min",isCurrent:true}
+  },
+  {
+    id:"nubi",
+    userName:"Sofía · @nubi.cielo",
+    animaKey:"nubi",
+    animaTitle:"Nubi 🐰",
+    moodLabel:"Triste",
+    moodEmoji:"😔",
+    moodState:"sad",
+    category:"support",
+    badgeBg:"#e7efff",
+    badgeColor:"#2b498c",
+    message:"Extrañando un poco a mi familia y con la batería social bajita. Gracias por no pedirme que finja estar al cien.",
+    updatedAgo:"Hace 1 h",
+    bio:"Nubi es un conejito dulce y soñador. Le encanta recibir notas breves o abrazos virtuales cuando le cuesta poner en palabras lo que siente.",
+    autoReply:"Un abrazo así justo era lo que necesitaba 😔🤍 gracias por acordarte de mí.",
+    map:{x:47,y:68,zone:"Última zona compartida: Jardín Botánico · ~1.5 km",sharedStatus:"Última ubicación compartida (hace 3 h · pausada)",isCurrent:false}
+  },
+  {
+    id:"pixel",
+    userName:"Diego · @pixel.star",
+    animaKey:"pixel",
+    animaTitle:"Píxel 🦝",
+    moodLabel:"Feliz",
+    moodEmoji:"😊",
+    moodState:"happy",
+    category:"calm",
+    badgeBg:"#fff5d6",
+    badgeColor:"#755610",
+    message:"¡Por fin entregué mi proyecto! Salió mejor de lo que esperaba y quiero compartir esta buena vibra con ustedes ✨.",
+    updatedAgo:"Hace 2 h",
+    bio:"Píxel es un mapache leal y espontáneo que siempre celebra los pequeños pasos de sus amigos y trae luz en los días grises.",
+    autoReply:"¡Gracias! Píxel ya está dando saltitos de emoción por tu mensaje 😊🦝.",
+    map:{x:74,y:66,zone:"Plaza de la Música · Radio aprox. 1 km",sharedStatus:"Compartida hace 2 h",isCurrent:true}
+  }
+];
+
+let circleFilter="all";
+const friendThreads={
+  chispa:[{who:"them",text:"Hoy traigo el corazón un poquito sensible. Gracias por pasarte por aquí 🥺."}],
+  momo:[{who:"them",text:"Aquí ando tranquilo, con calma por si necesitas desahogarte 😌."}],
+  nubi:[{who:"them",text:"Hoy voy despacito, pero me alegra verte en mi círculo 😔."}],
+  pixel:[{who:"them",text:"¡Hola! Píxel te manda chispitas de buen ánimo 😊."}]
+};
+
+function upsertUserCircleCard(mood,note){
+  const existing=CIRCLE_FRIENDS.findIndex(f=>f.id==="tu-estado");
+  const item={
+    id:"tu-estado",
+    userName:"Tú · (Vista previa local)",
+    animaKey:currentAnimaKey,
+    animaTitle:ANIMAS[currentAnimaKey].name+" "+ANIMAS[currentAnimaKey].emoji,
+    moodLabel:mood.name,
+    moodEmoji:mood.emoji,
+    moodState:mood.state,
+    category:(mood.state==="sad"||mood.state==="vulnerable"||mood.state==="overwhelmed")?"support":"calm",
+    badgeBg:"#efe9ff",
+    badgeColor:"#35208f",
+    message:note||"Compartí mi estado emocional con mi círculo de confianza.",
+    updatedAgo:"Ahora mismo",
+    bio:"Este es tu propio espacio compartido de demostración.",
+    autoReply:"Tu círculo recibió tu actualización con cariño."
+  };
+  if(existing>=0)CIRCLE_FRIENDS[existing]=item;
+  else CIRCLE_FRIENDS.unshift(item);
+  renderCircleCards();
+}
+function removeUserCircleCard(){
+  const idx=CIRCLE_FRIENDS.findIndex(f=>f.id==="tu-estado");
+  if(idx>=0){CIRCLE_FRIENDS.splice(idx,1);renderCircleCards();}
+}
+
+function renderCircleCards(){
+  const grid=$("#circleCardsGrid");
+  const list=CIRCLE_FRIENDS.filter(f=>circleFilter==="all"||f.category===circleFilter);
+  grid.innerHTML=list.map(f=>`
+    <article class="circle-card" data-friend-id="${f.id}">
+      <div class="circle-card-top">
+        <div class="circle-anima-box" style="background:${f.badgeBg}" data-open-profile="${f.id}" role="button" tabindex="0" aria-label="Abrir perfil de ${f.userName}">
+          ${renderAnimaSVG(f.animaKey,f.moodState,f.badgeBg,"none")}
+          <span class="circle-status-dot" title="${f.moodLabel}">${f.moodEmoji}</span>
+        </div>
+        <div class="circle-meta">
+          <div class="circle-name-row">
+            <h3>${f.userName}</h3>
+            <span class="circle-time">🕒 ${f.updatedAgo}</span>
+          </div>
+          <span class="mood-badge" style="background:${f.badgeBg};color:${f.badgeColor}">
+            ${f.moodEmoji} ${f.moodLabel} · ${f.animaTitle}
+          </span>
+        </div>
+      </div>
+      <p class="circle-msg">“${f.message}”</p>
+      <div class="circle-card-actions">
+        <button type="button" class="c-act-btn" data-quick-action="hug" data-id="${f.id}">🫂 Enviar abrazo</button>
+        <button type="button" class="c-act-btn" data-quick-action="talk" data-id="${f.id}">💬 ¿Quieres hablar?</button>
+        <button type="button" class="c-act-btn" data-quick-action="here" data-id="${f.id}">🤍 Estoy aquí</button>
+        <button type="button" class="c-profile-btn" data-open-profile="${f.id}">Perfil ↗</button>
+      </div>
+    </article>
+  `).join("");
+}
+renderCircleCards();
+
+document.querySelectorAll("#circleFilters .filter-pill").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll("#circleFilters .filter-pill").forEach(b=>b.setAttribute("aria-pressed","false"));
+  btn.setAttribute("aria-pressed","true");
+  circleFilter=btn.dataset.filter;
+  renderCircleCards();
+}));
+
+$("#circleCardsGrid").addEventListener("click",e=>{
+  const actBtn=e.target.closest("[data-quick-action]");
+  if(actBtn){
+    const f=CIRCLE_FRIENDS.find(x=>x.id===actBtn.dataset.id);
+    if(!f)return;
+    const type=actBtn.dataset.quickAction;
+    actBtn.classList.add("sent");
+    const labelMap={hug:"🫂 Abrazo enviado",talk:"💬 Invitación enviada",here:"🤍 Presencia enviada"};
+    const msgMap={
+      hug:`Le enviaste un abrazo cálido a ${f.animaTitle} 🫂`,
+      talk:`Le preguntaste con cariño a ${f.userName.split(" ")[0]} si quiere hablar 💬`,
+      here:`Le hiciste saber a ${f.userName.split(" ")[0]}: «Estoy aquí contigo, sin presión» 🤍`
+    };
+    actBtn.textContent=labelMap[type];
+    burst(actBtn, type==="hug"?"🫂":type==="talk"?"💬":"🤍", 8);
+    toast(msgMap[type]);
+    if(friendThreads[f.id]){
+      friendThreads[f.id].push({who:"me",text:msgMap[type]});
+      setTimeout(()=>friendThreads[f.id].push({who:"them",text:f.autoReply}),600);
+    }
+    return;
+  }
+  const profBtn=e.target.closest("[data-open-profile]");
+  if(profBtn)openFriendModal(profBtn.dataset.openProfile);
+});
+
+/* ===== MODAL DE PERFIL DEL AMIGO ===== */
+function openFriendModal(id){
+  const f=CIRCLE_FRIENDS.find(x=>x.id===id);
+  if(!f)return;
+  const thread=friendThreads[f.id]||[{who:"them",text:f.message}];
+  $("#modalBody").innerHTML=`
+    <div class="modal-hero">
+      <div class="modal-anima" style="background:${f.badgeBg}">
+        ${renderAnimaSVG(f.animaKey,f.moodState,f.badgeBg,"none")}
+      </div>
+      <div>
+        <span class="mood-badge" style="background:${f.badgeBg};color:${f.badgeColor};margin-bottom:6px">${f.moodEmoji} ${f.moodLabel}</span>
+        <h3 id="modalFriendName" style="margin:0">${f.userName}</h3>
+        <small class="muted">Ánima compañera: ${f.animaTitle} · ${f.updatedAgo}</small>
+      </div>
+    </div>
+    <p class="small muted" style="margin:14px 0 10px">${f.bio}</p>
+    <div style="background:var(--soft);padding:12px 14px;border-radius:16px;font-size:.9rem">
+      <strong>Estado compartido:</strong> “${f.message}”
+    </div>
+    <div class="modal-log" id="modalChatLog">
+      ${thread.map(m=>`<div class="modal-msg ${m.who}">${m.text}</div>`).join("")}
+    </div>
+    <form id="modalSendForm" style="display:flex;gap:8px;margin-top:12px">
+      <input id="modalMsgInput" maxlength="180" placeholder="Escribe un mensaje cálido (sin presión de respuesta)...">
+      <button type="submit" class="btn sm">Enviar 🤍</button>
+    </form>
+    <p class="small muted" style="margin:8px 0 0">✦ Mensaje demostrativo local. El destinatario recibe aviso de que no necesita responder de inmediato.</p>
+  `;
+  $("#friendModal").classList.add("open");
+  const log=$("#modalChatLog");log.scrollTop=log.scrollHeight;
+  $("#modalSendForm").addEventListener("submit",ev=>{
+    ev.preventDefault();
+    const inp=$("#modalMsgInput"),val=inp.value.trim();
+    if(!val)return;
+    inp.value="";
+    thread.push({who:"me",text:val});
+    log.innerHTML+=`<div class="modal-msg me">${val}</div>`;
+    log.scrollTop=log.scrollHeight;
+    setTimeout(()=>{
+      thread.push({who:"them",text:f.autoReply});
+      log.innerHTML+=`<div class="modal-msg them">${f.autoReply}</div>`;
+      log.scrollTop=log.scrollHeight;
+    },650);
+  });
+}
+$("#closeModalBtn").addEventListener("click",()=>$("#friendModal").classList.remove("open"));
+$("#friendModal").addEventListener("click",e=>{if(e.target===$("#friendModal"))$("#friendModal").classList.remove("open")});
+
+/* ===== 4. NUESTRO MAPA INTERACTIVO + CONTROLES DE PRIVACIDAD ===== */
+let selectedMapId="chispa";
+function renderMap(){
+  const pinsLayer=$("#mapPinsLayer");
+  const mapFriends=CIRCLE_FRIENDS.filter(f=>f.map);
+  pinsLayer.innerHTML=mapFriends.map(f=>`
+    <button type="button" class="map-pin" data-map-id="${f.id}" aria-pressed="${f.id===selectedMapId}" style="left:${f.map.x}%;top:${f.map.y}%" aria-label="Seleccionar marcador de ${f.userName}">
+      <div class="pin-ring">
+        <div class="pin-approx-zone"></div>
+        ${renderAnimaSVG(f.animaKey,f.moodState,f.badgeBg,"none")}
+      </div>
+      <span class="pin-tag">${f.animaTitle.split(" ")[0]} <span>${f.moodEmoji}</span></span>
+    </button>
+  `).join("");
+
+  const sel=mapFriends.find(f=>f.id===selectedMapId)||mapFriends[0];
+  $("#mapDetailCard").innerHTML=`
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:64px;height:64px;border-radius:20px;background:${sel.badgeBg};display:grid;place-items:center;flex:none">
+        ${renderAnimaSVG(sel.animaKey,sel.moodState,sel.badgeBg,"none")}
+      </div>
+      <div>
+        <span class="state-pill" style="display:inline-block;margin-bottom:4px;background:${sel.map.isCurrent?"#e2f8f1":"#efe9ff"};color:${sel.map.isCurrent?"#1d6352":"#48329e"}">
+          ${sel.map.isCurrent?"● Ubicación aproximada actual":"○ Última ubicación compartida"}
+        </span>
+        <h3 style="margin:0;font-size:1.18rem">${sel.userName}</h3>
+      </div>
+    </div>
+    <p class="small muted" style="margin-bottom:10px">📍 <strong>${sel.map.zone}</strong><br>🕒 ${sel.map.sharedStatus}</p>
+    <div style="background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:14px">
+      <div style="font-weight:900;font-size:.84rem;margin-bottom:4px">${sel.moodEmoji} Estado: ${sel.moodLabel}</div>
+      <p style="margin:0;font-size:.9rem">“${sel.message}”</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <button type="button" class="btn sm" id="mapSendMsgBtn">💌 Enviar mensaje cálido</button>
+      <button type="button" class="btn secondary sm" id="mapRequestContactBtn">🤝 Solicitar contacto</button>
+    </div>
+    <p class="small muted" style="margin:12px 0 0">La ubicación exacta nunca se muestra por defecto. Este mapa es un gesto de cercanía, no un sistema de rastreo ni emergencias.</p>
+  `;
+
+  $("#mapSendMsgBtn").addEventListener("click",()=>openFriendModal(sel.id));
+  $("#mapRequestContactBtn").addEventListener("click",()=>{
+    toast(`Solicitud respetuosa enviada a ${sel.userName.split(" ")[0]}: «¿Te gustaría vernos o hablar hoy?»`);
+    burst($("#mapRequestContactBtn"),"🤝",8);
+  });
+}
+renderMap();
+
+$("#mapPinsLayer").addEventListener("click",e=>{
+  const pin=e.target.closest("[data-map-id]");
+  if(!pin)return;
+  selectedMapId=pin.dataset.mapId;
+  renderMap();
+});
+
+// Controles de privacidad de ubicación del usuario
+$("#toggleMyLocation").addEventListener("change",e=>{
+  const on=e.target.checked;
+  $("#myShareBadge").textContent=on?"Compartiendo zona aprox.":"Pausado por defecto";
+  toast(on?"Ubicación aproximada activada con consentimiento":"Compartir ubicación pausado");
+});
+$("#toggleApproxOnly").addEventListener("change",e=>{
+  if(!e.target.checked){
+    e.target.checked=true;
+    toast("Por seguridad y privacidad, ANIMAS mantiene siempre un radio aproximado");
+  }
+});
+$("#audienceSelect").addEventListener("change",e=>{
+  $("#mapAudienceIndicator").innerHTML=`👁️ Visible para: <strong>${e.target.value}</strong>`;
+  toast("Visibilidad actualizada: "+e.target.value);
+});
+$("#revokeLocationBtn").addEventListener("click",()=>{
+  $("#toggleMyLocation").checked=false;
+  $("#audienceSelect").value="Nadie (Acceso revocado)";
+  $("#myShareBadge").textContent="Acceso revocado";
+  $("#mapAudienceIndicator").innerHTML=`👁️ Visible para: <strong>Nadie (Acceso revocado)</strong>`;
+  toast("Acceso a tu ubicación revocado de inmediato");
+});
+
+/* ===== 5. ESTOY AQUÍ CONTIGO (GESTOS SIN PRESIÓN) ===== */
+const GESTURE_TEMPLATES={
+  hug:{icon:"🫂",label:"Abrazo virtual cálido",text:"Te mando un abrazo suave que dura lo que tú necesites. No hace falta responder."},
+  voice:{icon:"🎙️",label:"Nota de voz tranquila (Demo · 0:14)",text:`<span class="voice-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> «Hola, solo quería recordarte que estoy aquí y que te quiero mucho. Respira tranquilo/a.»`},
+  memory:{icon:"📸",label:"Recuerdo bonito compartido",text:"Postal de aquella tarde riéndonos sin prisa. Quería dejarte un pedacito de esa calma hoy."},
+  quote:{icon:"💌",label:"Frase de apoyo sin prisa",text:"«No tienes que poder con todo hoy. Un paso chiquito ya es suficiente, y aquí estoy a tu lado.»"},
+  choice:{icon:"🫧",label:"¿Compañía o prefieres espacio?",text:"Pregunta abierta con botones de un toque: [ ☕ Quiero compañía ] · [ 🌙 Prefiero espacio tranquilo ]"},
+  moment:{icon:"🍵",label:"Pequeño momento compartido",text:"Me preparé una bebida caliente y pensé en ti. Compartimos este ratito a la distancia."}
+};
+
+function appendSharedMoment(recipientKey,icon,title,htmlText){
+  const friend=CIRCLE_FRIENDS.find(f=>f.id===recipientKey)||CIRCLE_FRIENDS[0];
+  const feed=$("#sharedMomentsFeed");
+  const row=document.createElement("div");
+  row.className="moment-item";
+  row.innerHTML=`
+    <div>
+      <strong>${icon} Para ${friend.userName.split(" ")[0]} (${friend.animaTitle}) · ${title}</strong>
+      <div class="small muted" style="margin-top:3px">${htmlText}</div>
+    </div>
+    <span class="state-pill" style="flex:none">Sin presión de respuesta ✓</span>
+  `;
+  feed.prepend(row);
+  toast(`Gesto enviado a ${friend.userName.split(" ")[0]} sin presión de respuesta`);
+}
+
+document.querySelectorAll("#hereActions .here-tile").forEach(btn=>btn.addEventListener("click",()=>{
+  const g=GESTURE_TEMPLATES[btn.dataset.gesture];
+  const rec=$("#hereRecipient").value;
+  appendSharedMoment(rec,g.icon,g.label,g.text);
+  burst(btn,g.icon,9);
+}));
+
+$("#customHereForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const inp=$("#customHereInput"),val=inp.value.trim();
+  if(!val)return;
+  const rec=$("#hereRecipient").value;
+  appendSharedMoment(rec,"✨","Pequeño momento compartido",`“${val}”`);
+  inp.value="";
+});
+
+/* ===== CHAT DE ACOMPAÑAMIENTO ORIGINAL ===== */
 const chatReplies=[
 {keys:["solo","soledad","nadie"],text:"Sentirse en soledad puede pesar mucho. No tienes que resolverlo todo ahora. ¿Hay alguien con quien te sentirías un poquito a salvo hablando?"},
 {keys:["estres","ansios","nervios","presion","examen"],text:"Suena a que tienes muchas cosas encima. Podemos ir por partes. ¿Qué es lo que más te está ocupando la cabeza en este momento?"},
@@ -246,13 +1250,15 @@ function addBubble(text,who="bot"){const b=document.createElement("div"),log=$("
 function normalize(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
 $("#chatForm").addEventListener("submit",e=>{e.preventDefault();const input=$("#chatInput"),value=input.value.trim();if(!value)return;addBubble(value,"user");input.value="";const n=normalize(value);if(/suicid|matarme|hacerme dano|quitarme la vida|no quiero vivir|quiero morir|no quiero seguir/.test(n)){addBubble("Gracias por decírmelo. Lo que estás viviendo importa y merece apoyo humano ahora. Si puedes, busca a una persona de confianza para que esté contigo y llama al 911 si hay peligro inmediato. También puedes comunicarte con Línea de la Vida al 800 911 2000. No tienes que quedarte a solas con esto.");$("#ayuda").scrollIntoView({behavior:"smooth"});return}const match=chatReplies.find(r=>r.keys.some(k=>n.includes(k)));setTimeout(()=>addBubble(match?match.text:"Te leo. No hace falta encontrar las palabras perfectas. ¿Qué parte de todo esto te gustaría que entendiera primero?"),350)});
 document.querySelectorAll(".emotion-chip").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".emotion-chip").forEach(b=>b.setAttribute("aria-pressed","false"));btn.setAttribute("aria-pressed","true");const emotion=btn.dataset.emotion;addBubble(emotion,"user");const reply=emotion.includes("feliz")?"¡Qué gusto! ¿Qué pasó hoy que te hizo sentir así?":emotion.includes("calma")?"Qué bien poder reconocer ese momento. ¿Qué te está ayudando a sentirte en calma?":emotion.includes("triste")?"Gracias por compartirlo. No tienes que cambiar esa emoción a la fuerza. ¿Quieres contarme qué la acompaña?":emotion.includes("ansioso")?"Debe sentirse agotador. ¿Qué es lo que más te preocupa en este momento?":emotion.includes("frustrado")?"La frustración puede aparecer cuando algo importa mucho. ¿Qué te hubiera gustado que pasara?":emotion.includes("vulnerable")?"Gracias por confiarme algo tan sensible. ¿Qué necesitarías para sentirte un poquito más acompañado/a?":"No pasa nada si todavía no encuentras la palabra. ¿Dónde notas esa sensación: en tus pensamientos, en tu cuerpo o en tu ánimo?";setTimeout(()=>addBubble(reply),300)}));
-const RM=matchMedia("(prefers-reduced-motion:reduce)").matches,rnd=(a,b)=>a+Math.random()*(b-a);
-function burst(node,emo,n=9){if(RM||!node)return;const r=node.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement("span"),a=Math.PI*2*i/n+Math.random()*.5,d=rnd(50,110);s.className="bp";s.textContent=emo;s.style.cssText=`left:${r.left+r.width/2}px;top:${r.top+r.height/2}px;--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d-30}px`;document.body.append(s);setTimeout(()=>s.remove(),1000)}}
+
+/* ===== EFECTOS VISUALES SUAVES Y PARTÍCULAS ===== */
+const RM=()=>manualReduce||matchMedia("(prefers-reduced-motion:reduce)").matches,rnd=(a,b)=>a+Math.random()*(b-a);
+function burst(node,emo,n=9){if(RM()||!node)return;const r=node.getBoundingClientRect();for(let i=0;i<n;i++){const s=document.createElement("span"),a=Math.PI*2*i/n+Math.random()*.5,d=rnd(50,110);s.className="bp";s.textContent=emo;s.style.cssText=`left:${r.left+r.width/2}px;top:${r.top+r.height/2}px;--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d-30}px`;document.body.append(s);setTimeout(()=>s.remove(),1000)}}
 (()=>{let i=0;const wrap=n=>[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();[...c.textContent].forEach(ch=>{const s=document.createElement("span");s.className="lt";s.style.setProperty("--i",i++);s.textContent=ch;f.append(s)});c.replaceWith(f)}else if(c.nodeType===1)wrap(c)});wrap($(".hero h1"))})();
-(()=>{if(RM)return;const h=$(".hero");["#7ee8c7","#86d4ff","#a98bff"].forEach((c,i)=>{const a=document.createElement("i");a.className="aur";a.style.cssText=`background:${c};width:${300+i*80}px;height:${300+i*80}px;left:${[-5,45,70][i]}%;top:${[55,-10,50][i]}%;animation-delay:${-i*4}s`;h.append(a)});for(let i=0;i<16;i++){const p=document.createElement("span");p.className="fp";p.textContent=["✨","🫧","🌿","💜","☁️","⭐"][i%6];p.style.cssText=`left:${rnd(2,96)}%;font-size:${rnd(.9,1.8)}rem;animation-duration:${rnd(9,18)}s;animation-delay:${-rnd(0,16)}s`;h.append(p)}})();
+(()=>{if(RM())return;const h=$(".hero");["#7ee8c7","#86d4ff","#a98bff"].forEach((c,i)=>{const a=document.createElement("i");a.className="aur";a.style.cssText=`background:${c};width:${300+i*80}px;height:${300+i*80}px;left:${[-5,45,70][i]}%;top:${[55,-10,50][i]}%;animation-delay:${-i*4}s`;h.append(a)});for(let i=0;i<16;i++){const p=document.createElement("span");p.className="fp";p.textContent=["✨","🫧","🌿","💜","☁️","⭐"][i%6];p.style.cssText=`left:${rnd(2,96)}%;font-size:${rnd(.9,1.8)}rem;animation-duration:${rnd(9,18)}s;animation-delay:${-rnd(0,16)}s`;h.append(p)}})();
 addEventListener("scroll",()=>{const d=document.documentElement;$("#sp").style.width=100*d.scrollTop/Math.max(1,d.scrollHeight-d.clientHeight)+"%"},{passive:true});
-document.querySelectorAll(".card,.community-post,.form-card").forEach(c=>c.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")}));
-let lastT=0;addEventListener("pointermove",e=>{if(RM||e.pointerType!=="mouse"||Date.now()-lastT<70)return;lastT=Date.now();const t=document.createElement("span");t.className="trail";t.textContent=["✦","✧","·"][Math.random()*3|0];t.style.cssText=`left:${e.clientX}px;top:${e.clientY}px`;document.body.append(t);setTimeout(()=>t.remove(),800)});
+document.querySelectorAll(".card,.community-post,.form-card,.circle-card").forEach(c=>c.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")}));
+let lastT=0;addEventListener("pointermove",e=>{if(RM()||e.pointerType!=="mouse"||Date.now()-lastT<70)return;lastT=Date.now();const t=document.createElement("span");t.className="trail";t.textContent=["✦","✧","·"][Math.random()*3|0];t.style.cssText=`left:${e.clientX}px;top:${e.clientY}px`;document.body.append(t);setTimeout(()=>t.remove(),800)});
 const jumpHero=()=>{const h=$("#heroAnimal");h.classList.remove("jump");void h.offsetWidth;h.classList.add("jump");setTimeout(()=>h.classList.remove("jump"),800)};
 {const ha=$("#heroAnimal");ha.setAttribute("role","button");ha.tabIndex=0;ha.setAttribute("aria-label","Saludar a tu Ánima");ha.addEventListener("click",()=>{jumpHero();burst(ha,"💜",8)});ha.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();jumpHero();burst(ha,"💜",8)}})}
 document.querySelectorAll(".anima-option").forEach(b=>b.addEventListener("click",()=>{burst(b,"✨",8);jumpHero()}));
@@ -260,11 +1266,12 @@ document.querySelectorAll(".mood").forEach(b=>b.addEventListener("click",()=>bur
 $("#saveMood").addEventListener("click",()=>{if(selectedMood)setTimeout(()=>burst($("#moodPreview"),selectedMood.emoji,12),60)});
 const EMC={feliz:"#ffd86b",calma:"#8fe8cf",triste:"#7ba8ff",ansioso:"#c9a0ff",frustrado:"#ff8f8f",vulnerable:"#ffb3d1","sé":"#b8bfd8"};
 document.querySelectorAll(".emotion-chip").forEach(b=>{const [em,...rest]=b.textContent.trim().split(" ");b.innerHTML=`<span class="em">${em}</span><small>${rest.join(" ")}</small>`;b.addEventListener("click",()=>{const k=Object.keys(EMC).find(k=>b.dataset.emotion.includes(k))||"sé";$(".chat-head").style.setProperty("--emo",EMC[k]);burst(b.querySelector(".em"),em,10)})});
+
 /* ===== KIDS: el clima funciona en todo el chat ===== */
 const KW={sun:{e:"☀️",l:"Soleado",gear:"😎",msg:"¡Tu bosque está soleado! ☀️ ¿Qué fue algo que te dio alegría hoy?"},cloud:{e:"☁️",l:"Nublado",gear:"🧣",msg:"Un día nublado también está bien. ☁️ ¿Qué te ayudaría a sentirte acompañado/a?"},rain:{e:"🌧️",l:"Lluvioso",gear:"☂️",msg:"La lluvia puede ser tranquila o un poquito pesada. 🌧️ ¿Quieres contarle a alguien cómo estuvo tu día?"},storm:{e:"⛈️",l:"Con tormenta",gear:"😬",msg:"¡Vaya tormenta! ⛈️ Cuando algo se siente muy grande, es bueno buscar a una persona adulta de confianza. ¿Respiramos juntos? 🌬️"},rainbow:{e:"🌈",l:"Con arcoíris",gear:"🥳",msg:"¡Un arcoíris después de la lluvia! 🌈 ¿Qué pequeño momento bonito quieres guardar de hoy?"},night:{e:"🌙",l:"Estrellado",gear:"😴",msg:"Ya es de noche en tu bosque. 🌙 Descansar también es importante. ¿Cómo se siente tu cuerpo?"}};
 const KDET=[["storm",/tormenta|trueno|enoj|enfad|coraje|miedo|asust/],["rain",/\bno (estoy|me siento|ando) (bien|content|feliz)|triste|llov|llor|extran|\bsol[oa]\b/],["night",/noche|dormir|sueno|cansad|estrell|luna/],["rainbow",/arcoiris|genial|emocionad|increible|logr|orgull/],["sun",/\bsol\b|solead|feliz|content|alegr|jugu|divert|\bbien\b/],["cloud",/nubl|aburr|regular|mas o menos|no se\b/]];
 const kStage=$("#kidsStage"),kFx=$("#kidsFx"),kChar=$("#kidsCharacter"),kLog=$("#kidsChatLog");let kw=null,br=null;
-function buildFx(k){kFx.replaceChildren();if(RM)return;const add=(t,c,st)=>{const e=document.createElement(t);e.className=c;e.style.cssText=st||"";kFx.append(e);return e};
+function buildFx(k){kFx.replaceChildren();if(RM())return;const add=(t,c,st)=>{const e=document.createElement(t);e.className=c;e.style.cssText=st||"";kFx.append(e);return e};
 if(k==="rain"||k==="storm"){const s=k==="storm";for(let i=0;i<(s?70:38);i++)add("i","drop",`left:${rnd(0,100)}%;animation-duration:${s?rnd(.45,.8):rnd(.8,1.3)}s;animation-delay:${-rnd(0,1.5)}s`);if(s)add("i","klight")}
 if(k==="rain"||k==="cloud"||k==="storm")for(let i=0;i<3;i++)add("span","kcloud",`top:${4+i*14}%;animation-duration:${rnd(16,28)}s;animation-delay:${-rnd(0,20)}s`).textContent="☁️";
 if(k==="night")for(let i=0;i<22;i++)add("span","kstar",`left:${rnd(2,96)}%;top:${rnd(3,60)}%;animation-delay:${-rnd(0,2)}s`).textContent=i%4?"✦":"⭐";
@@ -281,4 +1288,5 @@ const hit=KDET.find(([k,r])=>r.test(n));
 if(hit){setKidWeather(hit[0]);const w=KW[hit[0]];addKidBubble(`${w.e} Cambié el clima de tu bosque a: ${w.l}`,false," sys");kidSay(w.msg,800)}
 else kidSay(kw?`Gracias por contármelo. ${KW[kw].e} Tu bosque está ${KW[kw].l.toLowerCase()}. ¿Quieres contarme un poquito más? También puedes invitar a una persona adulta de confianza a escucharte.`:"Gracias por contármelo. 🌿 ¿Cómo está el clima en tu bosque hoy? Puedes tocar un emoji o decírmelo.",800)});
 </script>
-</body></html>
+</body>
+</html>
